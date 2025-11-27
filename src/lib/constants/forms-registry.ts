@@ -6179,6 +6179,7 @@ const I526_DEFINITION: FormDefinition = {
     category: 'work_authorization',
     estimatedTime: '180-240 minutes',
     filingFee: 3675,
+    price: 60,
     status: 'beta',
     sections: [
         {
