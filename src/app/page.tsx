@@ -3,27 +3,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle, MessageCircle, FileText, Shield } from 'lucide-react';
 import { SituationSelector } from '@/components/SituationSelector';
-import { AuthButton } from '@/components/auth/AuthButton';
+import { Navigation } from '@/components/Navigation';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="border-b bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
-            <Link href="/" className="font-bold text-2xl text-blue-600">
-              ImmigrationPrep
-            </Link>
-            <div className="flex items-center gap-6">
-              <Link href="/browse">
-                <Button variant="ghost" className="text-base font-medium">Browse Forms</Button>
-              </Link>
-              <AuthButton />
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-24 px-4 overflow-hidden">

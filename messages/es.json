@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "browseForms": "Ver Formularios",
+    "pricing": "Precios",
+    "login": "Iniciar Sesión",
+    "signup": "Crear Cuenta",
+    "dashboard": "Panel Principal",
+    "logout": "Cerrar Sesión",
+    "myPurchases": "Mis Compras"
+  },
+  "landing": {
+    "trustBadge": "Más de 10,000 solicitantes confían en nosotros",
+    "heroTitle": "Formularios de Inmigración",
+    "heroTitleHighlight": "Simplificados",
+    "heroSubtitle": "Prepare los formularios de USCIS usted mismo con asistencia guiada. No necesita abogado. Ahorre miles.",
+    "getStarted": "Comenzar Gratis",
+    "browseAllForms": "Ver Todos los Formularios",
+    "disclaimer": "⚠️ No somos un bufete de abogados. Usted prepara sus propios formularios usando nuestro software.",
+    "situationTitle": "¿Cuál es su Situación?",
+    "situationSubtitle": "Seleccione la opción que mejor describa su situación para comenzar con los formularios correctos.",
+    "howItWorksTitle": "Cómo Funciona",
+    "howItWorksSubtitle": "Tres pasos simples para preparar sus formularios de inmigración",
+    "step1Title": "Elija sus Formularios",
+    "step1Description": "Seleccione entre 18 formularios de USCIS o paquetes convenientes adaptados a su situación de inmigración específica.",
+    "step2Title": "Responda las Preguntas",
+    "step2Description": "Complete nuestro cuestionario en lenguaje claro con guardado automático. Continúe en cualquier momento desde donde lo dejó.",
+    "step3Title": "Descargue y Envíe",
+    "step3Description": "Obtenga sus formularios PDF completos y listos para USCIS al instante. Imprima y envíe a USCIS con confianza."
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Crear Cuenta",
+    "createAccount": "Crear Cuenta",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidó su Contraseña?",
+    "noAccount": "¿No tiene una cuenta?",
+    "haveAccount": "¿Ya tiene una cuenta?",
+    "continue": "Continuar",
+    "or": "o"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido",
+    "myForms": "Mis Formularios",
+    "recentApplications": "Solicitudes Recientes",
+    "allForms": "Todos los Formularios",
+    "startForm": "Comenzar Formulario",
+    "continueForm": "Continuar",
+    "preview": "Vista Previa",
+    "viewDetails": "Ver Detalles"
+  },
+  "forms": {
+    "buyNow": "Comprar por $60",
+    "buyPackage": "Comprar Paquete",
+    "startApplication": "Comenzar Solicitud",
+    "continueApplication": "Continuar Solicitud",
+    "reviewForm": "Revisar Formulario",
+    "downloadPDF": "Descargar PDF",
+    "estimatedTime": "Tiempo Estimado",
+    "filingFee": "Tarifa de Presentación",
+    "status": {
+      "active": "Activo",
+      "beta": "Beta"
+    },
+    "category": {
+      "family": "Familia",
+      "citizenship": "Ciudadanía",
+      "work_authorization": "Autorización de Trabajo",
+      "employment": "Empleo",
+      "travel": "Viaje",
+      "humanitarian": "Humanitario",
+      "status_change": "Cambio de Estado",
+      "other": "Otro"
+    },
+    "fields": {
+      "firstName": "Nombre (First Name)",
+      "middleName": "Segundo Nombre (Middle Name)",
+      "lastName": "Apellido (Last Name)",
+      "dateOfBirth": "Fecha de Nacimiento (Date of Birth)",
+      "alienNumber": "Número de Extranjero (Alien Number)",
+      "currentAddress": "Dirección Actual (Current Address)",
+      "mailingAddress": "Dirección Postal (Mailing Address)",
+      "city": "Ciudad (City)",
+      "state": "Estado (State)",
+      "zipCode": "Código Postal (ZIP Code)",
+      "country": "País (Country)",
+      "phoneNumber": "Número de Teléfono (Phone Number)",
+      "email": "Correo Electrónico (Email Address)"
+    },
+    "instructions": {
+      "answerInEnglish": "⚠️ Todas las respuestas deben escribirse en INGLÉS para los formularios de USCIS",
+      "answerInEnglishShort": "Responda en inglés",
+      "requiredField": "Este campo es obligatorio"
+    }
+  },
+  "pricing": {
+    "title": "Precios Simples - Todos los Formularios $60",
+    "subtitle": "¡Compre múltiples formularios y ahorre automáticamente!",
+    "oneForm": "1 Formulario",
+    "twoForms": "2 Formularios",
+    "threeForms": "3 Formularios",
+    "fourPlusForms": "4+ Formularios",
+    "save": "Ahorre"
+  },
+  "browse": {
+    "title": "Ver Todos los Formularios de Inmigración",
+    "subtitle": "Explore nuestra colección completa de 18 formularios de USCIS. Regístrese para comenzar.",
+    "individualForms": "Formularios Individuales",
+    "individualFormsSubtitle": "O comience con una solicitud de formulario único",
+    "allForms": "Todos los Formularios",
+    "noFormsFound": "No se encontraron formularios en esta categoría",
+    "signUpToStart": "Regístrese para Comenzar",
+    "tryPreview": "Pruebe Vista Previa",
+    "goToDashboard": "Ir al Panel Principal"
+  },
+  "common": {
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  }
+}

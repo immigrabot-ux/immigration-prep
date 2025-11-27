@@ -1,17 +1,33 @@
-import { type NextRequest, NextResponse } from 'next/server';
+import { type NextRequest } from 'next/server';
 import { updateSession } from '@/lib/supabase/middleware';
+import createIntlMiddleware from 'next-intl/middleware';
+
+// Create the internationalization middleware
+const intlMiddleware = createIntlMiddleware({
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    localePrefix: 'never'
+});
 
 export async function middleware(request: NextRequest) {
-    // Update Supabase session
+    // First, handle internationalization
+    const intlResponse = intlMiddleware(request);
+
+    // Then update Supabase session
     const response = await updateSession(request);
 
-    // The updateSession already handles authentication redirects
-    // We don't need to duplicate the logic here
+    // Merge headers from intl response into supabase response
+    if (intlResponse.headers) {
+        intlResponse.headers.forEach((value, key) => {
+            response.headers.set(key, value);
+        });
+    }
+
     return response;
 }
 
 export const config = {
     matcher: [
-        '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+        '/((?!api|_next|fonts|images|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)',
     ],
 };

@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "browseForms": "Browse Forms",
+    "pricing": "Pricing",
+    "login": "Login",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "myPurchases": "My Purchases"
+  },
+  "landing": {
+    "trustBadge": "Trusted by 10,000+ Applicants",
+    "heroTitle": "Immigration Forms",
+    "heroTitleHighlight": "Made Simple",
+    "heroSubtitle": "Prepare USCIS forms yourself with guided assistance. No lawyer needed. Save thousands.",
+    "getStarted": "Get Started Free",
+    "browseAllForms": "Browse All Forms",
+    "disclaimer": "⚠️ We are not a law firm. You prepare your own forms using our software.",
+    "situationTitle": "What's Your Situation?",
+    "situationSubtitle": "Select the option that best describes your situation to get started with the right forms.",
+    "howItWorksTitle": "How It Works",
+    "howItWorksSubtitle": "Three simple steps to prepare your immigration forms",
+    "step1Title": "Choose Your Forms",
+    "step1Description": "Select from 18 USCIS forms or convenient packages tailored to your specific immigration situation.",
+    "step2Title": "Answer Questions",
+    "step2Description": "Fill out our plain-English questionnaire with auto-save. Resume anytime from where you left off.",
+    "step3Title": "Download & File",
+    "step3Description": "Get your completed, USCIS-ready PDF forms instantly. Print and mail to USCIS with confidence."
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "createAccount": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "continue": "Continue",
+    "or": "or"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "myForms": "My Forms",
+    "recentApplications": "Recent Applications",
+    "allForms": "All Forms",
+    "startForm": "Start Form",
+    "continueForm": "Continue",
+    "preview": "Preview",
+    "viewDetails": "View Details"
+  },
+  "forms": {
+    "buyNow": "Buy for $60",
+    "buyPackage": "Buy Package",
+    "startApplication": "Start Application",
+    "continueApplication": "Continue Application",
+    "reviewForm": "Review Form",
+    "downloadPDF": "Download PDF",
+    "estimatedTime": "Estimated Time",
+    "filingFee": "Filing Fee",
+    "status": {
+      "active": "Active",
+      "beta": "Beta"
+    },
+    "category": {
+      "family": "Family",
+      "citizenship": "Citizenship",
+      "work_authorization": "Work Auth",
+      "employment": "Employment",
+      "travel": "Travel",
+      "humanitarian": "Humanitarian",
+      "status_change": "Status Change",
+      "other": "Other"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "Date of Birth",
+      "alienNumber": "Alien Number",
+      "currentAddress": "Current Address",
+      "mailingAddress": "Mailing Address",
+      "city": "City",
+      "state": "State",
+      "zipCode": "ZIP Code",
+      "country": "Country",
+      "phoneNumber": "Phone Number",
+      "email": "Email Address"
+    },
+    "instructions": {
+      "answerInEnglish": "⚠️ All answers must be written in ENGLISH for USCIS forms",
+      "answerInEnglishShort": "Answer in English",
+      "requiredField": "This field is required"
+    }
+  },
+  "pricing": {
+    "title": "Simple Pricing - All Forms $60",
+    "subtitle": "Buy multiple forms and save automatically!",
+    "oneForm": "1 Form",
+    "twoForms": "2 Forms",
+    "threeForms": "3 Forms",
+    "fourPlusForms": "4+ Forms",
+    "save": "Save"
+  },
+  "browse": {
+    "title": "Browse All Immigration Forms",
+    "subtitle": "Explore our complete collection of 18 USCIS forms and convenient packages. Sign up to get started.",
+    "individualForms": "Individual Forms",
+    "individualFormsSubtitle": "Or start with a single form application",
+    "allForms": "All Forms",
+    "noFormsFound": "No forms found in this category",
+    "signUpToStart": "Sign Up to Start",
+    "tryPreview": "Try Preview",
+    "goToDashboard": "Go to Dashboard"
+  },
+  "common": {
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}
