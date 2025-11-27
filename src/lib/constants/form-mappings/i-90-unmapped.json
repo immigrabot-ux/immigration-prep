@@ -1,0 +1,147 @@
+{
+  "formId": "i-90",
+  "unmappedCount": 28,
+  "totalQuestions": 42,
+  "unmappedQuestions": [
+    {
+      "id": "part1.1a.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.1b.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.1c.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.2.alienNumber",
+      "label": "2. Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part1.3.uscisOnlineNumber",
+      "label": "3. USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part1.4.classOfAdmission",
+      "label": "4. Class of Admission",
+      "type": "text"
+    },
+    {
+      "id": "part1.5.dateOfAdmission",
+      "label": "5. Date You Became a Permanent Resident",
+      "type": "date"
+    },
+    {
+      "id": "part1.6.dateOfBirth",
+      "label": "6. Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part1.9.nameChanged",
+      "label": "9. Has your name legally changed since you were granted lawful permanent residence?",
+      "type": "radio"
+    },
+    {
+      "id": "part1.11.inCareOfName",
+      "label": "11. In Care Of Name (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part1.13.physicalAddressSameAsMailing",
+      "label": "13. Is your physical address the same as your mailing address?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.residenceType",
+      "label": "What type of resident are you?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.sectionA.reason",
+      "label": "Section A: Reason for Application (for Permanent Residents)",
+      "type": "select"
+    },
+    {
+      "id": "part3.1.locationOfProcessing",
+      "label": "1. Where did you process for your green card?",
+      "type": "select"
+    },
+    {
+      "id": "part3.3.uscisOffice",
+      "label": "3. USCIS Office Location (if processed in U.S.)",
+      "type": "text"
+    },
+    {
+      "id": "part4.2.race",
+      "label": "2. Race",
+      "type": "select"
+    },
+    {
+      "id": "part4.3.heightFeet",
+      "label": "3. Height - Feet",
+      "type": "select"
+    },
+    {
+      "id": "part4.3.heightInches",
+      "label": "3. Height - Inches",
+      "type": "select"
+    },
+    {
+      "id": "part4.4.weight",
+      "label": "4. Weight (in pounds)",
+      "type": "text"
+    },
+    {
+      "id": "part4.5.eyeColor",
+      "label": "5. Eye Color",
+      "type": "select"
+    },
+    {
+      "id": "part4.6.hairColor",
+      "label": "6. Hair Color",
+      "type": "select"
+    },
+    {
+      "id": "part5.1.needAccommodations",
+      "label": "Are you requesting an accommodation because of a disability?",
+      "type": "radio"
+    },
+    {
+      "id": "part5.2.deaf",
+      "label": "I am deaf or hard of hearing and request ASL interpreter",
+      "type": "checkbox"
+    },
+    {
+      "id": "part5.3.blind",
+      "label": "I am blind or have low vision and request materials in alternative format",
+      "type": "checkbox"
+    },
+    {
+      "id": "part5.4.other",
+      "label": "Other accommodation request (please describe)",
+      "type": "text"
+    },
+    {
+      "id": "part6.2.preparedApplication",
+      "label": "2. Who prepared this application?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.certification",
+      "label": "I certify, under penalty of perjury, that all information in this application and evidence submitted is true and correct",
+      "type": "checkbox"
+    },
+    {
+      "id": "part7.acknowledgement",
+      "label": "I authorize release of information from this application to other government agencies",
+      "type": "checkbox"
+    }
+  ]
+}

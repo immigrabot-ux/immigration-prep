@@ -1,0 +1,117 @@
+{
+  "formId": "i-131",
+  "unmappedCount": 22,
+  "totalQuestions": 34,
+  "unmappedQuestions": [
+    {
+      "id": "part1.documentType",
+      "label": "I am applying for (select one):",
+      "type": "select"
+    },
+    {
+      "id": "part2.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.mailingCareOfName",
+      "label": "2.a. In Care Of Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.alienNumber",
+      "label": "11. Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part2.classOfAdmission",
+      "label": "12. Class of Admission",
+      "type": "text"
+    },
+    {
+      "id": "part2.i94Number",
+      "label": "13. I-94 Arrival-Departure Record Number",
+      "type": "text"
+    },
+    {
+      "id": "part3.race",
+      "label": "2. Race (Select all that apply)",
+      "type": "select"
+    },
+    {
+      "id": "part3.height",
+      "label": "3. Height (feet and inches)",
+      "type": "text"
+    },
+    {
+      "id": "part3.weight",
+      "label": "4. Weight (pounds)",
+      "type": "text"
+    },
+    {
+      "id": "part3.eyeColor",
+      "label": "5. Eye Color",
+      "type": "select"
+    },
+    {
+      "id": "part3.hairColor",
+      "label": "6. Hair Color",
+      "type": "select"
+    },
+    {
+      "id": "part4.inRemovalProceedings",
+      "label": "1. Are you now in exclusion, deportation, removal, or rescission proceedings?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.previouslyIssuedReentryPermit",
+      "label": "2. Have you ever been issued a Reentry Permit or Refugee Travel Document?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.previouslyIssuedAdvanceParole",
+      "label": "4. Have you ever been issued an Advance Parole Document?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.purposeOfTrip",
+      "label": "1. Purpose of Trip",
+      "type": "textarea"
+    },
+    {
+      "id": "part7.countriesVisit",
+      "label": "2. List the countries you intend to visit",
+      "type": "textarea"
+    },
+    {
+      "id": "part7.intendedDeparture",
+      "label": "3. Intended Date of Departure from the United States",
+      "type": "date"
+    },
+    {
+      "id": "part7.intendedLength",
+      "label": "4. Intended Length of Trip",
+      "type": "text"
+    },
+    {
+      "id": "part7.howManyTrips",
+      "label": "5. How many trips do you intend to use this document?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.needsReplacement",
+      "label": "6. If you answered \"One trip only\", is this a replacement for a document that was lost, stolen, or destroyed?",
+      "type": "radio"
+    }
+  ]
+}

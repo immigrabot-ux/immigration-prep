@@ -1,0 +1,951 @@
+{
+  "pdfPath": "/Users/minafaltas/DocFill/immigration-prep/public/pdf-templates/i-9-unlocked.pdf",
+  "totalFields": 128,
+  "fields": [
+    {
+      "name": "3 A lawful permanent resident Enter USCIS or ANumber",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Employee",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name Family Name from Section 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name Given Name from Section 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Middle initial if any from Section 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name Given Name",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Employee Middle Initial (if any)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Employee Other Last Names Used (if any)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Today's Date mmddyyy",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List A.  Document 2. Expiration Date (if any)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List A.   Document Title 3.  If any",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List A. Document 3.  Enter Issuing Authority",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List A.  Document 3 Number.  If any",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List B Document 1 Title",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Additional Information",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Middle initial if any from Section 1-2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Sig Date mmddyyyy 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Sig Date mmddyyyy 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Sig Date mmddyyyy 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Sig Date mmddyyyy 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Preparer or Translator 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Preparer or Translator 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Preparer or Translator 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Preparer or Translator 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Last Name (Family Name) 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Last Name (Family Name) 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Last Name (Family Name) 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Address (Street Number and Name) 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Address (Street Number and Name) 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Address (Street Number and Name) 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Address (Street Number and Name) 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator First Name (Given Name) 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator Last Name (Family Name) 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator First Name (Given Name) 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator First Name (Given Name) 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator City or Town 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator City or Town 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator City or Town 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer or Translator City or Town 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Preparer State 0",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AK",
+        "AL",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY",
+        "CAN",
+        "MEX"
+      ],
+      "value": " "
+    },
+    {
+      "name": "Preparer State 1",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AK",
+        "AL",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY",
+        "CAN",
+        "MEX"
+      ],
+      "value": " "
+    },
+    {
+      "name": "Preparer State 2",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AK",
+        "AL",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY",
+        "CAN",
+        "MEX"
+      ],
+      "value": " "
+    },
+    {
+      "name": "Preparer State 3",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AK",
+        "AL",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY",
+        "CAN",
+        "MEX"
+      ],
+      "value": " "
+    },
+    {
+      "name": "Zip Code 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Zip Code 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Zip Code 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Zip Code 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "CB_1",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "CB_2",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "CB_3",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "CB_4",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "Date of Rehire 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Date of Rehire 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Date of Rehire 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Todays Date 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Todays Date 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Todays Date 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Middle Initial 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Middle Initial 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Middle Initial 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "PT Middle Initial 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "PT Middle Initial 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "PT Middle Initial 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "PT Middle Initial 3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Title 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Title 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Expiration Date 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Expiration Date 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Expiration Date 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Name of Emp or Auth Rep 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Name of Emp or Auth Rep 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Name of Emp or Auth Rep 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Emp Rep 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Emp Rep 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Emp Rep 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "CB_Alt_0",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "CB_Alt_1",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "CB_Alt_2",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "Addtl Info 0",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Addtl Info 2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Addtl Info 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "CB_Alt",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "Last Name Family Name from Section 1-2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "First Name Given Name from Section 1-2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "State",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AK",
+        "AL",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY",
+        "CAN",
+        "MEX"
+      ],
+      "value": " "
+    },
+    {
+      "name": "ZIP Code",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Date of Birth mmddyyyy",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "US Social Security Number",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Telephone Number",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name (Family Name)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Address Street Number and Name",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Apt Number (if any)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "City or Town",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Employees E-mail Address",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Exp Date mmddyyyy",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "USCIS ANumber",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Form I94 Admission Number",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Foreign Passport Number and Country of IssuanceRow1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Title 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Issuing Authority 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number 0 (if any)",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Title 2 If any",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Issuing Authority_2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number If any_2",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Document Number if any_3",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List C Expiration Date 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List C Document Number 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List C Issuing Authority 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List C Document Title 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "FirstDayEmployed mmddyyyy",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "S2 Todays Date mmddyyyy",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Last Name First Name and Title of Employer or Authorized Representative",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Signature of Employer or AR",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Employers Business or Org Name",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Employers Business or Org Address",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "Expiration Date if any",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List B Issuing Authority 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List B Document Number 1",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "List B Expiration Date 1",
+      "type": "PDFTextField",
+      "value": ""
+    }
+  ]
+}

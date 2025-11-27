@@ -1,0 +1,117 @@
+{
+  "formId": "i-751",
+  "unmappedCount": 22,
+  "totalQuestions": 35,
+  "unmappedQuestions": [
+    {
+      "id": "part1.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.alienNumber",
+      "label": "2. A-Number (Alien Registration Number)",
+      "type": "text"
+    },
+    {
+      "id": "part1.uscisAccount",
+      "label": "3. USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part1.dateConditionalResidence",
+      "label": "4. Date Conditional Residence Obtained",
+      "type": "date"
+    },
+    {
+      "id": "part1.expirationDate",
+      "label": "5. Conditional Residence Expires On",
+      "type": "date"
+    },
+    {
+      "id": "part2.race",
+      "label": "5. Race (Select all that apply)",
+      "type": "select"
+    },
+    {
+      "id": "part3.filingBasis",
+      "label": "I am filing this petition (select only one):",
+      "type": "select"
+    },
+    {
+      "id": "part3.marriageEnded",
+      "label": "If filing for a waiver: Is your marriage still legally valid?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.spouseGivenName",
+      "label": "1.b. Spouse's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.spouseMiddleName",
+      "label": "1.c. Spouse's Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part4.spouseAlienNumber",
+      "label": "4. Spouse's A-Number (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part4.dateOfMarriage",
+      "label": "5. Date of Marriage",
+      "type": "date"
+    },
+    {
+      "id": "part4.placeOfMarriage",
+      "label": "6. Place of Marriage (City, State/Province, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part4.spouseStatus",
+      "label": "7. Spouse's Current Immigration Status",
+      "type": "select"
+    },
+    {
+      "id": "part5.totalChildren",
+      "label": "1. Total number of children",
+      "type": "text"
+    },
+    {
+      "id": "part5.childrenDetails",
+      "label": "2. List each child's information",
+      "type": "textarea"
+    },
+    {
+      "id": "part5.childrenIncludedInPetition",
+      "label": "3. How many children are listed on your conditional green card and included in this petition?",
+      "type": "text"
+    },
+    {
+      "id": "part7.certifyTruthfulness",
+      "label": "I certify, under penalty of perjury, that all information in this petition and any document submitted with it were provided or authorized by me, that I reviewed and understand all of the information contained in and submitted with my petition, and that all of this information is complete, true, and correct.",
+      "type": "checkbox"
+    },
+    {
+      "id": "part7.certifyGoodFaith",
+      "label": "I understand that I must establish that I entered into the marriage in good faith and provide evidence that the marriage was not entered into for the purpose of procuring an immigration benefit.",
+      "type": "checkbox"
+    },
+    {
+      "id": "part7.understoodConsequences",
+      "label": "I understand that if USCIS determines I entered the marriage solely to obtain immigration benefits, my conditional residence will not be removed and I may be subject to removal from the United States.",
+      "type": "checkbox"
+    }
+  ]
+}

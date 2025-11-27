@@ -1,0 +1,187 @@
+{
+  "formId": "i-129f",
+  "unmappedCount": 36,
+  "totalQuestions": 60,
+  "unmappedQuestions": [
+    {
+      "id": "part1.1.classification",
+      "label": "1. Classification Sought for Your Beneficiary",
+      "type": "select"
+    },
+    {
+      "id": "part1.2a.familyName",
+      "label": "2.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.2b.givenName",
+      "label": "2.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.2c.middleName",
+      "label": "2.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.3.otherNamesUsed",
+      "label": "3. Other Names Used (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part1.5.dateOfBirth",
+      "label": "5. Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part1.7.howCitizenshipObtained",
+      "label": "7. How Did You Acquire U.S. Citizenship?",
+      "type": "select"
+    },
+    {
+      "id": "part1.9.physicalAddressSameAsMailing",
+      "label": "9. Is your physical address the same as your mailing address?",
+      "type": "radio"
+    },
+    {
+      "id": "part1.10.currentMaritalStatus",
+      "label": "10. Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part1.11.numberOfPriorMarriages",
+      "label": "11. How many times have you been married?",
+      "type": "text"
+    },
+    {
+      "id": "part1.12.dateLastMarriageEnded",
+      "label": "12. Date Your Last Marriage Ended (if applicable)",
+      "type": "date"
+    },
+    {
+      "id": "part1.13.howLastMarriageEnded",
+      "label": "13. How Did Your Last Marriage End?",
+      "type": "select"
+    },
+    {
+      "id": "part1.14.occupation",
+      "label": "14. Your Current Occupation",
+      "type": "text"
+    },
+    {
+      "id": "part1.15.employerName",
+      "label": "15. Name of Your Current Employer",
+      "type": "text"
+    },
+    {
+      "id": "part2.1a.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.1b.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.1c.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.2.otherNamesUsed",
+      "label": "2. Other Names Used",
+      "type": "text"
+    },
+    {
+      "id": "part2.3.alienNumber",
+      "label": "3. Alien Registration Number (A-Number) (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part2.5.dateOfBirth",
+      "label": "5. Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part2.8.province",
+      "label": "Province/State",
+      "type": "text"
+    },
+    {
+      "id": "part2.8.postalCode",
+      "label": "Postal Code",
+      "type": "text"
+    },
+    {
+      "id": "part2.9.currentMaritalStatus",
+      "label": "9. Beneficiary's Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part2.10.numberOfPriorMarriages",
+      "label": "10. Number of Times Beneficiary Has Been Married",
+      "type": "text"
+    },
+    {
+      "id": "part2.11.dateLastMarriageEnded",
+      "label": "11. Date Beneficiary's Last Marriage Ended (if applicable)",
+      "type": "date"
+    },
+    {
+      "id": "part2.12.children",
+      "label": "12. Number of Children (Under 21 and Unmarried)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1.dateFirstMet",
+      "label": "1. Date You First Met in Person",
+      "type": "date"
+    },
+    {
+      "id": "part3.3.howMet",
+      "label": "3. How Did You Meet?",
+      "type": "textarea"
+    },
+    {
+      "id": "part3.4.metThroughIMB",
+      "label": "4. Did you meet through an International Marriage Broker?",
+      "type": "radio"
+    },
+    {
+      "id": "part3.5.dateOfMarriage",
+      "label": "5. Date of Marriage (K-3 petitions only)",
+      "type": "date"
+    },
+    {
+      "id": "part3.6.placeOfMarriage",
+      "label": "6. Place of Marriage (K-3 petitions only)",
+      "type": "text"
+    },
+    {
+      "id": "part4.1.criminalConvictions",
+      "label": "1. Have you ever been arrested or convicted of any crime?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.2.filedPreviousPetitions",
+      "label": "2. Have you previously filed petitions for other fiancé(e)s or spouses?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.3.previousK1Petitions",
+      "label": "3. If yes, how many K-1 petitions have you filed in the past?",
+      "type": "text"
+    },
+    {
+      "id": "part6.certification",
+      "label": "I certify, under penalty of perjury, that all information in this petition is true and correct",
+      "type": "checkbox"
+    },
+    {
+      "id": "part6.intentToMarry",
+      "label": "I certify that I am legally able to marry and intend to marry my fiancé(e) within 90 days of admission (K-1 only)",
+      "type": "checkbox"
+    }
+  ]
+}

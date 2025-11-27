@@ -1,0 +1,282 @@
+{
+  "formId": "i-485",
+  "unmappedCount": 55,
+  "totalQuestions": 80,
+  "unmappedQuestions": [
+    {
+      "id": "part1.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.otherNameUsed",
+      "label": "2. Have you used any other names since birth?",
+      "type": "radio"
+    },
+    {
+      "id": "part1.alienNumber",
+      "label": "10. Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part1.uscisAccount",
+      "label": "11. USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part1.mailingCareOfName",
+      "label": "13.a. In Care Of Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.travelDocNumber",
+      "label": "16. Travel Document Number",
+      "type": "text"
+    },
+    {
+      "id": "part1.visaNumber",
+      "label": "19. Visa Number (from visa stamp in passport)",
+      "type": "text"
+    },
+    {
+      "id": "part1.dateOfLastEntry",
+      "label": "21. Date of Your Last Arrival into the United States",
+      "type": "date"
+    },
+    {
+      "id": "part1.inspected",
+      "label": "22.a. Were you inspected by a U.S. immigration officer?",
+      "type": "radio"
+    },
+    {
+      "id": "part1.i94Number",
+      "label": "23.a. I-94 Arrival-Departure Record Number",
+      "type": "text"
+    },
+    {
+      "id": "part1.statusAtEntry",
+      "label": "23.c. Immigration Status at Your Last Arrival",
+      "type": "text"
+    },
+    {
+      "id": "part1.currentStatus",
+      "label": "24. Current Immigration Status",
+      "type": "text"
+    },
+    {
+      "id": "part2.filingCategory",
+      "label": "I am applying for adjustment of status because:",
+      "type": "select"
+    },
+    {
+      "id": "part2.section245i",
+      "label": "Are you applying for adjustment under Section 245(i)?",
+      "type": "radio"
+    },
+    {
+      "id": "part3.addressHistory",
+      "label": "List ALL addresses where you have lived during the past 5 years",
+      "type": "textarea"
+    },
+    {
+      "id": "part3.employmentHistory",
+      "label": "List ALL employment and education for the past 5 years",
+      "type": "textarea"
+    },
+    {
+      "id": "part4.parent1FamilyName",
+      "label": "1.a. Parent 1's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.parent1GivenName",
+      "label": "1.b. Parent 1's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.parent2FamilyName",
+      "label": "9.a. Parent 2's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.parent2GivenName",
+      "label": "9.b. Parent 2's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part5.currentMaritalStatus",
+      "label": "1. What is your current marital status?",
+      "type": "select"
+    },
+    {
+      "id": "part5.timesMarried",
+      "label": "2. How many times have you been married (including annulled marriages)?",
+      "type": "text"
+    },
+    {
+      "id": "part5.currentSpouseFamilyName",
+      "label": "3.a. Current Spouse's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part5.currentSpouseGivenName",
+      "label": "3.b. Current Spouse's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part5.dateOfMarriage",
+      "label": "4. Date of Marriage",
+      "type": "date"
+    },
+    {
+      "id": "part5.placeOfMarriage",
+      "label": "5. Place of Marriage (City/Town, State/Province, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part5.spouseImmigrationStatus",
+      "label": "6. Current Spouse's Immigration Status",
+      "type": "select"
+    },
+    {
+      "id": "part6.childrenDetails",
+      "label": "List each child's information",
+      "type": "textarea"
+    },
+    {
+      "id": "part7.race",
+      "label": "2. Race (Select all that apply)",
+      "type": "select"
+    },
+    {
+      "id": "part7.height",
+      "label": "3. Height (feet and inches)",
+      "type": "text"
+    },
+    {
+      "id": "part7.weight",
+      "label": "4. Weight (pounds)",
+      "type": "text"
+    },
+    {
+      "id": "part7.eyeColor",
+      "label": "5. Eye Color",
+      "type": "select"
+    },
+    {
+      "id": "part7.hairColor",
+      "label": "6. Hair Color",
+      "type": "select"
+    },
+    {
+      "id": "part8.publicCharge",
+      "label": "Are you subject to the public charge ground of inadmissibility?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.healthRelated",
+      "label": "Have you been found to have a communicable disease of public health significance?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.criminalHistory",
+      "label": "Have you EVER been arrested, cited, charged, or detained for any reason by any law enforcement official?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.crimeConviction",
+      "label": "Have you EVER been convicted of a crime or offense?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.controlledSubstance",
+      "label": "Have you EVER violated any law related to possessing, using, or distributing illegal drugs?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.prostitution",
+      "label": "Have you EVER engaged in prostitution or procured anyone for prostitution?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.humanTrafficking",
+      "label": "Have you EVER been involved in human trafficking?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.moneyLaundering",
+      "label": "Have you EVER knowingly helped any person involved in money laundering?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.terroristActivity",
+      "label": "Have you EVER engaged in, conspired to engage in, or supported terrorist activity?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.totalitarianParty",
+      "label": "Have you EVER been a member of or affiliated with the Communist Party or any other totalitarian party?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.persecution",
+      "label": "Have you EVER persecuted any person because of race, religion, national origin, membership in a social group, or political opinion?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.torture",
+      "label": "Have you EVER committed, ordered, incited, assisted, or otherwise participated in torture?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.genocide",
+      "label": "Have you EVER committed, ordered, incited, assisted, or participated in genocide?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.childSoldier",
+      "label": "Have you EVER recruited, enlisted, conscripted, or used child soldiers?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.religiousFreedom",
+      "label": "Have you EVER been responsible for violations of religious freedom?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.immigrationFraud",
+      "label": "Have you EVER committed immigration fraud or helped anyone commit immigration fraud?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.falseUSCitizen",
+      "label": "Have you EVER falsely claimed to be a U.S. citizen?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.votedIllegally",
+      "label": "Have you EVER voted in the United States in violation of any law or regulation?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.renounced",
+      "label": "Have you EVER renounced U.S. citizenship to avoid taxation?",
+      "type": "radio"
+    },
+    {
+      "id": "part8.unlawfullyPresent",
+      "label": "Have you EVER been unlawfully present in the United States for more than 180 days?",
+      "type": "radio"
+    }
+  ]
+}

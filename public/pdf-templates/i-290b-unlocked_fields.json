@@ -1,0 +1,596 @@
+{
+  "pdfPath": "/Users/minafaltas/DocFill/immigration-prep/public/pdf-templates/i-290b-unlocked.pdf",
+  "totalFields": 85,
+  "fields": [
+    {
+      "name": "form1[0].#pageSet[0].Page1[0].PDF417BarCode1[0]",
+      "type": "PDFTextField",
+      "value": "I-290B|05/31/24|1"
+    },
+    {
+      "name": "form1[0].#pageSet[0].Page1[1].PDF417BarCode1[0]",
+      "type": "PDFTextField",
+      "value": "I-290B|05/31/24|2"
+    },
+    {
+      "name": "form1[0].#pageSet[0].Page1[2].PDF417BarCode1[0]",
+      "type": "PDFTextField",
+      "value": "I-290B|05/31/24|3"
+    },
+    {
+      "name": "form1[0].#pageSet[0].Page1[3].PDF417BarCode1[0]",
+      "type": "PDFTextField",
+      "value": "I-290B|05/31/24|4"
+    },
+    {
+      "name": "form1[0].#pageSet[0].Page1[4].PDF417BarCode1[0]",
+      "type": "PDFTextField",
+      "value": "I-290B|05/31/24|5"
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1_Line1a_FamilyName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1_Line1b_GivenName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1_Line1c_MiddleName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_CityOrTown[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_StreetNumberName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_Unit[0]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_Unit[1]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_AptSteFlrNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_Unit[2]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_PostalCode[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_ZipCode[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_State[0]",
+      "type": "PDFDropdown",
+      "options": [
+        " ",
+        "AA",
+        "AE",
+        "AK",
+        "AL",
+        "AP",
+        "AR",
+        "AS",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "FM",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MH",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "PW",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ]
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_Country[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_Province[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].AttorneyStateBarNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].USCISELISAcctNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].G28-CheckBox1[0]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1Line6_InCareOfName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1_Line3a_InCareOfName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].#area[0].Pt1_Line6_AlienNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].Pt1_Line7_USCISELISAcctNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[0].P1_Line2_DateofBirth[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line5_DateAdverseDecision[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line2_checkbox[0]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line2_checkbox[1]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line2_Formnumberappeal[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line4_ImmigrantClassification[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[1].Pt2_Line3_ReceiptNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line2_checkbox[2]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].P3_Line6_USCISOffice[0]",
+      "type": "PDFDropdown",
+      "options": [
+        " AAO",
+        " Agana (AGA)",
+        " Albany (ALB) ",
+        " Albuquerque (ABQ)",
+        " Anchorage (ANC)",
+        " Atlanta (ATL)",
+        " Baltimore (BAL)",
+        " Boise (BOI)",
+        " Boston (BOS)",
+        " Brooklyn Field Office (BNY)",
+        " Buffalo (BUF)",
+        " California Service Center (WAC)",
+        " Charleston (CHL)",
+        " Charlotte (CLT)",
+        " Charlotte Amelie (CHA)",
+        " Chicago (CHI)",
+        " Chula Vista (CVC)",
+        " Cincinnati (CIN)",
+        " Cleveland (CLE)",
+        " Columbus (CLM)",
+        " Dallas (DAL)",
+        " Denver (DEN)",
+        " Des Moines (DSM)",
+        " Detroit (DET)",
+        " El Paso (ELP)",
+        " Fort Myers Field Office (OFM)",
+        " Fresno (FRE)",
+        " Ft. Smith, AR (FSA)",
+        " Greer, SC (GRR)",
+        " Harlingen (HLG)",
+        " Hartford (HAR)",
+        " Helena (HEL)",
+        " Hialeah (HIA)",
+        " Honolulu (HHW)",
+        " Houston (HOU)",
+        " Humanitarian Affairs Branch (RIH)",
+        " Immigrant Investor Program (IIP) ",
+        " Imperial Field Office (IMP)",
+        " Indianapolis (INP)",
+        " Jacksonville (JAC)",
+        " Kansas City (KAN)",
+        " Kendall (KND)",
+        " Las Vegas (LVG)",
+        " Lawrence (LAW)",
+        " Long Island (LNY)",
+        " Los Angeles (LAC)",
+        " Los Angeles (LOS)",
+        " Los Angeles (SFV)",
+        " Louisville (LOU)",
+        " Manchester (MAN)",
+        " Memphis (MEM)",
+        " Miami (MIA)",
+        " Milwaukee (MIL)",
+        " Montgomery Field Office (MGA)",
+        " Mount Laurel (MTL)",
+        " National Benefits Center (NBC)",
+        " Nebraska Service Center (LIN)",
+        " New Jersey (NEW)",
+        " New Orleans (NOL)",
+        " New York City (NYC)",
+        " Newark District Office (NEW)",
+        " Norfolk (NOR)",
+        " Oakland Park (OKL)",
+        " Oklahoma City (OKC)",
+        " Omaha (OMA)",
+        " Orlando (ORL)",
+        " Other",
+        " Philadelphia (PHI)",
+        " Phoenix (PHO)",
+        " Pittsburgh (PIT)",
+        " Portland (POM)",
+        " Portland (POO)",
+        " Potomac Service Center (YSC)",
+        " Providence (PRO)",
+        " Queens (QNS)",
+        " Raleigh (RAL)",
+        " Refugee and International Operations (RIH)",
+        " Reno (REN)",
+        " Sacramento (SAC)",
+        " Salt Lake City (SLC)",
+        " San Antonio (SNA)",
+        " San Bernardino (SBD)",
+        " San Diego (SND)",
+        " San Fernando Field Office (SFV)",
+        " San Francisco (SFR)",
+        " San Jose (SNJ)",
+        " San Juan (SAJ)",
+        " Santa Ana (SAA)",
+        " Seattle (SEA)",
+        " Spokane (SPO)",
+        " St. Albans (STA)",
+        " St. Louis (STL)",
+        " St. Paul (SPM)",
+        " Tampa (TAM)",
+        " Texas Service Center (SRC)",
+        " Tucson (TUC)",
+        " Vermont Service Center (EAC)",
+        " Washington (WAS)",
+        " West Palm Beach (WPB)",
+        " Yakima (YAK)"
+      ]
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line1_checkbox[0]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line1_checkbox[1]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].P2_Line1_checkbox[2]",
+      "type": "PDFCheckBox",
+      "value": "unchecked"
+    },
+    {
+      "name": "form1[0].#subform[1].Pt3_FillableField[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P4_Line5_Email[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P4_Line3_TelephoneNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P4_Line4_TelephoneNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P4_Line6b_DateofSignature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P4_Line6a_Signature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line1a_InterpreterFamilyName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line1b_InterpreterGivenName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line2_InterpreterBusiness[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line4_InterDayTel[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line4_InterDayTel[1]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line5_EmailAddress[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line5b_Fluent[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line6a_Signature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P5_Line6b_DateofSignature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P6_Line2_BusinessName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P6_Line1b_PreparerGivenName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].P6_Line1a_PreparerFamilyName[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].#area[1].Pt6_Line4_PrepDayPhone[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].#area[2].Pt6_Line5_PrepFaxPhone[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[2].Pt6_Line6_PrepEmailAddress[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[3].P6_L8a_PrepSignature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[3].P6_L8b_PrepSignature[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt1_Line6_AlienNumber[1]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line3a_PageNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line3b_PartNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line3c_ItemNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line3d_AdditionalInfo[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line4a_PageNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line4b_PartNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line4c_ItemNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line4d_AdditionalInfo[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line5a_PageNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line5b_PartNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line5c_ItemNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line7c_ItemNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line7b_PartNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line7a_PageNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line6a_PageNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line6b_PartNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line6c_ItemNumber[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt1_Line1a_FamilyName[1]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt1_Line1b_GivenName[1]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt1_Line1c_MiddleName[1]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line7d_AdditionalInfo[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line6d_AdditionalInfo[0]",
+      "type": "PDFTextField",
+      "value": ""
+    },
+    {
+      "name": "form1[0].#subform[4].Pt7_Line5d_AdditionalInfo[0]",
+      "type": "PDFTextField",
+      "value": ""
+    }
+  ]
+}

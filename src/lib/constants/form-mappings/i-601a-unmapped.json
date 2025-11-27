@@ -1,0 +1,52 @@
+{
+  "formId": "i-601a",
+  "unmappedCount": 9,
+  "totalQuestions": 10,
+  "unmappedQuestions": [
+    {
+      "id": "part1.lastName",
+      "label": "Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.firstName",
+      "label": "Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.middleName",
+      "label": "Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.dateOfBirth",
+      "label": "Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part1.alienNumber",
+      "label": "Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part2.relativeType",
+      "label": "Your qualifying relative is your",
+      "type": "radio"
+    },
+    {
+      "id": "part2.relativeName",
+      "label": "Relative's Full Name",
+      "type": "text"
+    },
+    {
+      "id": "part3.extremeHardship",
+      "label": "Describe extreme hardship to qualifying relative",
+      "type": "textarea"
+    },
+    {
+      "id": "part3.consularPost",
+      "label": "U.S. Consulate Where You Will Apply",
+      "type": "text"
+    }
+  ]
+}

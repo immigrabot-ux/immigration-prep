@@ -1,0 +1,197 @@
+{
+  "formId": "i-9",
+  "unmappedCount": 38,
+  "totalQuestions": 46,
+  "unmappedQuestions": [
+    {
+      "id": "section1.lastName",
+      "label": "Last Name (Family Name)",
+      "type": "text"
+    },
+    {
+      "id": "section1.firstName",
+      "label": "First Name (Given Name)",
+      "type": "text"
+    },
+    {
+      "id": "section1.middleInitial",
+      "label": "Middle Initial",
+      "type": "text"
+    },
+    {
+      "id": "section1.otherLastNames",
+      "label": "Other Last Names Used (if any)",
+      "type": "text"
+    },
+    {
+      "id": "section1.zipCode",
+      "label": "ZIP Code",
+      "type": "text"
+    },
+    {
+      "id": "section1.dateOfBirth",
+      "label": "Date of Birth (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "section1.ssn",
+      "label": "U.S. Social Security Number",
+      "type": "ssn"
+    },
+    {
+      "id": "section1.email",
+      "label": "Employee's Email Address",
+      "type": "email"
+    },
+    {
+      "id": "section1.citizenshipStatus",
+      "label": "I attest, under penalty of perjury, that I am (check one of the following boxes):",
+      "type": "radio"
+    },
+    {
+      "id": "section1.uscisNumber",
+      "label": "USCIS Number (for LPR or alien authorized to work)",
+      "type": "text"
+    },
+    {
+      "id": "section1.alienNumber",
+      "label": "Alien Registration Number/USCIS Number",
+      "type": "text"
+    },
+    {
+      "id": "section1.i94Number",
+      "label": "Form I-94 Admission Number",
+      "type": "text"
+    },
+    {
+      "id": "section1.passportCountry",
+      "label": "Country of Issuance",
+      "type": "text"
+    },
+    {
+      "id": "section1.workAuthorizationExpiration",
+      "label": "Employment Authorization Expiration Date (if any)",
+      "type": "date"
+    },
+    {
+      "id": "section2.employeeLastName",
+      "label": "Employee Last Name from Section 1",
+      "type": "text"
+    },
+    {
+      "id": "section2.employeeFirstName",
+      "label": "Employee First Name from Section 1",
+      "type": "text"
+    },
+    {
+      "id": "section2.employeeMiddleInitial",
+      "label": "Employee Middle Initial from Section 1",
+      "type": "text"
+    },
+    {
+      "id": "section2.citizenshipStatus",
+      "label": "Citizenship/Immigration Status from Section 1",
+      "type": "text"
+    },
+    {
+      "id": "section2.listA.documentTitle",
+      "label": "Document Title",
+      "type": "text"
+    },
+    {
+      "id": "section2.listA.issuingAuthority",
+      "label": "Issuing Authority",
+      "type": "text"
+    },
+    {
+      "id": "section2.listA.documentNumber",
+      "label": "Document Number",
+      "type": "text"
+    },
+    {
+      "id": "section2.listA.expirationDate",
+      "label": "Expiration Date (if any)",
+      "type": "date"
+    },
+    {
+      "id": "section2.listB.documentTitle",
+      "label": "Document Title",
+      "type": "text"
+    },
+    {
+      "id": "section2.listB.issuingAuthority",
+      "label": "Issuing Authority",
+      "type": "text"
+    },
+    {
+      "id": "section2.listB.documentNumber",
+      "label": "Document Number",
+      "type": "text"
+    },
+    {
+      "id": "section2.listB.expirationDate",
+      "label": "Expiration Date (if any)",
+      "type": "date"
+    },
+    {
+      "id": "section2.listC.documentTitle",
+      "label": "Document Title",
+      "type": "text"
+    },
+    {
+      "id": "section2.listC.issuingAuthority",
+      "label": "Issuing Authority",
+      "type": "text"
+    },
+    {
+      "id": "section2.listC.documentNumber",
+      "label": "Document Number",
+      "type": "text"
+    },
+    {
+      "id": "section2.listC.expirationDate",
+      "label": "Expiration Date (if any)",
+      "type": "date"
+    },
+    {
+      "id": "section2.additionalInformation",
+      "label": "Additional Information",
+      "type": "textarea"
+    },
+    {
+      "id": "section2.firstDayOfEmployment",
+      "label": "Employee's First Day of Employment (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "section2.employerLastName",
+      "label": "Last Name of Employer or Authorized Representative",
+      "type": "text"
+    },
+    {
+      "id": "section2.employerFirstName",
+      "label": "First Name of Employer or Authorized Representative",
+      "type": "text"
+    },
+    {
+      "id": "section2.employerTitle",
+      "label": "Title of Employer or Authorized Representative",
+      "type": "text"
+    },
+    {
+      "id": "section2.employerBusinessName",
+      "label": "Employer's Business or Organization Name",
+      "type": "text"
+    },
+    {
+      "id": "section2.employerAddress",
+      "label": "Employer's Business Address (Street Number and Name)",
+      "type": "text"
+    },
+    {
+      "id": "section2.employerZipCode",
+      "label": "ZIP Code",
+      "type": "text"
+    }
+  ]
+}

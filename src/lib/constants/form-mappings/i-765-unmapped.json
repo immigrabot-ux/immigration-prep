@@ -1,0 +1,142 @@
+{
+  "formId": "i-765",
+  "unmappedCount": 27,
+  "totalQuestions": 41,
+  "unmappedQuestions": [
+    {
+      "id": "part1.reason",
+      "label": "I am applying for (select only one box):",
+      "type": "radio"
+    },
+    {
+      "id": "part1.previouslyFiled",
+      "label": "2. Have you EVER filed Form I-765?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.otherNamesUsed",
+      "label": "2. Have you used any other names since birth?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.mailingCareOfName",
+      "label": "5.a. In Care Of Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.physicalAddressSameAsMailing",
+      "label": "6. Is your current physical address the same as your mailing address?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.alienNumber",
+      "label": "8. Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part2.uscisAccount",
+      "label": "9. USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part2.gender",
+      "label": "10. Gender",
+      "type": "radio"
+    },
+    {
+      "id": "part2.maritalStatus",
+      "label": "11. Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part2.wantSSNCard",
+      "label": "14. Do you want the SSA to issue you a Social Security card?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.consentDisclosure",
+      "label": "15. Consent for Disclosure: I authorize disclosure of information from this application to the SSA as required for assigning me a Social Security number and issuing me a Social Security card",
+      "type": "radio"
+    },
+    {
+      "id": "part2.fatherFamilyName",
+      "label": "16.a. Father's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.fatherGivenName",
+      "label": "16.b. Father's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.motherFamilyName",
+      "label": "17.a. Mother's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.motherGivenName",
+      "label": "17.b. Mother's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.countriesOfCitizenship",
+      "label": "18. Country or Countries of Citizenship or Nationality",
+      "type": "text"
+    },
+    {
+      "id": "part2.i94Number",
+      "label": "21. I-94 Arrival-Departure Record Number",
+      "type": "text"
+    },
+    {
+      "id": "part2.passportExpiration",
+      "label": "22.c. Passport Expiration Date",
+      "type": "date"
+    },
+    {
+      "id": "part2.dateOfLastEntry",
+      "label": "23. Date of Your Last Arrival into the United States",
+      "type": "date"
+    },
+    {
+      "id": "part2.placeOfLastEntry",
+      "label": "24. Place of Your Last Arrival into the United States",
+      "type": "text"
+    },
+    {
+      "id": "part2.immigrationStatusAtEntry",
+      "label": "25. Immigration Status at Your Last Arrival (for example, B-2 visitor, F-1 student)",
+      "type": "text"
+    },
+    {
+      "id": "part2.currentImmigrationStatus",
+      "label": "26. Your Current Immigration Status or Category",
+      "type": "text"
+    },
+    {
+      "id": "part2.sevisNumber",
+      "label": "27. Student and Exchange Visitor Information System (SEVIS) Number (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part2.eligibilityCategory",
+      "label": "28. Eligibility Category",
+      "type": "select"
+    }
+  ]
+}

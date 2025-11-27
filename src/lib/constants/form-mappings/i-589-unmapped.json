@@ -1,0 +1,212 @@
+{
+  "formId": "i-589",
+  "unmappedCount": 41,
+  "totalQuestions": 50,
+  "unmappedQuestions": [
+    {
+      "id": "partA1.1.alienNumber",
+      "label": "1. Alien Registration Number (A-Number) (if any)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.3.familyName",
+      "label": "3. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.4.givenName",
+      "label": "4. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.5.middleName",
+      "label": "5. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "partA1.6.otherNamesUsed",
+      "label": "6. Other Names Used (include maiden name and aliases)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.7.dateOfBirth",
+      "label": "7. Date of Birth (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "partA1.9.nationality",
+      "label": "9. Current Nationality (Citizenship)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.10.race",
+      "label": "10. Race, Ethnic, or Tribal Group",
+      "type": "text"
+    },
+    {
+      "id": "partA1.11.religion",
+      "label": "11. Religion",
+      "type": "text"
+    },
+    {
+      "id": "partA1.13.mailingAddress",
+      "label": "13. U.S. Mailing Address (Street Number and Name)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.18.dateOfLastArrival",
+      "label": "18. Date of Last Arrival in the U.S. (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "partA1.19.i94Number",
+      "label": "19. I-94 Number (if any)",
+      "type": "text"
+    },
+    {
+      "id": "partA1.20.currentImmigrationStatus",
+      "label": "20. Current Immigration Status",
+      "type": "text"
+    },
+    {
+      "id": "partA2.1.maritalStatus",
+      "label": "1. Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "partA2.3.spouseDateOfBirth",
+      "label": "3. Spouse's Date of Birth (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "partA2.4.spouseNationality",
+      "label": "4. Spouse's Nationality",
+      "type": "text"
+    },
+    {
+      "id": "partA2.5.spouseLocation",
+      "label": "5. Spouse's Current Location",
+      "type": "text"
+    },
+    {
+      "id": "partA3.1.lastResidenceAbroad",
+      "label": "1. Last Residence Before Coming to the U.S.",
+      "type": "text"
+    },
+    {
+      "id": "partA3.2.lastOccupationAbroad",
+      "label": "2. Last Occupation Abroad",
+      "type": "text"
+    },
+    {
+      "id": "partA3.3.lastEducation",
+      "label": "3. Last School Attended",
+      "type": "text"
+    },
+    {
+      "id": "partA3.4.languagesSpoken",
+      "label": "4. Languages You Speak Fluently",
+      "type": "text"
+    },
+    {
+      "id": "partA3.5.traveledToUS",
+      "label": "5. List All Trips to the U.S.",
+      "type": "textarea"
+    },
+    {
+      "id": "partB.1.applyingFor",
+      "label": "I am applying for asylum or withholding of removal",
+      "type": "checkbox"
+    },
+    {
+      "id": "partB.2.persecutionGrounds",
+      "label": "Primary Ground for Asylum (check all that apply in your detailed statement)",
+      "type": "select"
+    },
+    {
+      "id": "partB.3.pastPersecution",
+      "label": "1.A. Have you, your family, or close friends or colleagues ever experienced harm or mistreatment in the past?",
+      "type": "radio"
+    },
+    {
+      "id": "partB.4.fearFuturePersecution",
+      "label": "1.B. Do you fear harm or mistreatment if you return to your home country?",
+      "type": "radio"
+    },
+    {
+      "id": "partB.5.detailedExplanation",
+      "label": "2. Detailed Explanation of Your Asylum Claim",
+      "type": "textarea"
+    },
+    {
+      "id": "partB.6.governmentInvolvement",
+      "label": "3. Was the persecution by government officials or people the government cannot or will not control?",
+      "type": "radio"
+    },
+    {
+      "id": "partB.7.attemptedRelocation",
+      "label": "4. Did you try to relocate within your country before coming to the U.S.?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.1.appliedAsylumBefore",
+      "label": "1. Have you ever applied for asylum in any other country?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.2.appliedAsylumBeforeDetails",
+      "label": "2. If yes, provide details (country, date, result)",
+      "type": "textarea"
+    },
+    {
+      "id": "partC.3.excludableOffenses",
+      "label": "3. Have you ever committed a crime or been arrested?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.4.crimeDetails",
+      "label": "4. If yes, provide details of any arrests or criminal convictions",
+      "type": "textarea"
+    },
+    {
+      "id": "partC.5.militaryService",
+      "label": "5. Have you ever served in any military or armed group?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.6.terroristOrganization",
+      "label": "6. Have you ever been a member of or supported any organization?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.7.persecutedOthers",
+      "label": "7. Have you ever persecuted another person because of their race, religion, nationality, membership in a social group, or political opinion?",
+      "type": "radio"
+    },
+    {
+      "id": "partC.8.oneYearDeadline",
+      "label": "8. Are you filing within 1 year of your last arrival in the U.S.?",
+      "type": "radio"
+    },
+    {
+      "id": "partD.1.interpreterUsed",
+      "label": "1. Did someone assist you in completing this application?",
+      "type": "radio"
+    },
+    {
+      "id": "partD.2.assistantName",
+      "label": "2. Name of person who helped you (if any)",
+      "type": "text"
+    },
+    {
+      "id": "partD.3.certification",
+      "label": "I certify, under penalty of perjury under U.S. law, that this application and the evidence submitted with it are true and correct",
+      "type": "checkbox"
+    },
+    {
+      "id": "partD.4.warnings",
+      "label": "I understand that knowingly making a false statement may result in criminal prosecution and denial of my application",
+      "type": "checkbox"
+    }
+  ]
+}

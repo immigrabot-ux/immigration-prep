@@ -1,0 +1,147 @@
+{
+  "formId": "i-140",
+  "unmappedCount": 28,
+  "totalQuestions": 40,
+  "unmappedQuestions": [
+    {
+      "id": "part1.1a.legalName",
+      "label": "1.a. Legal Name of Organization (or Your Full Name if Individual)",
+      "type": "text"
+    },
+    {
+      "id": "part1.1b.tradeName",
+      "label": "1.b. Trade Name/DBA (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part1.2.taxId",
+      "label": "2. U.S. Employer Identification Number (EIN)",
+      "type": "text"
+    },
+    {
+      "id": "part2.classification",
+      "label": "This petition is being filed for (select one):",
+      "type": "select"
+    },
+    {
+      "id": "part2.selfPetition",
+      "label": "Is this a self-petition?",
+      "type": "radio"
+    },
+    {
+      "id": "part3.1a.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1b.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1c.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part3.2.alienNumber",
+      "label": "2. Alien Registration Number (A-Number) (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part3.3.dateOfBirth",
+      "label": "3. Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part4.1.beneficiaryInUS",
+      "label": "1. Is the beneficiary currently in the United States?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.2.currentStatus",
+      "label": "2. If yes, current nonimmigrant status",
+      "type": "text"
+    },
+    {
+      "id": "part4.3.statusExpiration",
+      "label": "3. Current Status Valid Until",
+      "type": "date"
+    },
+    {
+      "id": "part4.4.consularProcessing",
+      "label": "4. Will beneficiary apply for adjustment of status or consular processing?",
+      "type": "radio"
+    },
+    {
+      "id": "part5.1.jobTitle",
+      "label": "1. Job Title",
+      "type": "text"
+    },
+    {
+      "id": "part5.2.socCode",
+      "label": "2. SOC Code",
+      "type": "text"
+    },
+    {
+      "id": "part5.3.salaryPerYear",
+      "label": "3. Salary Per Year",
+      "type": "text"
+    },
+    {
+      "id": "part5.4.educationRequired",
+      "label": "4. Minimum Education Required",
+      "type": "select"
+    },
+    {
+      "id": "part5.5.experienceRequired",
+      "label": "5. Months of Experience Required in Job Offered",
+      "type": "text"
+    },
+    {
+      "id": "part5.6.jobDuties",
+      "label": "6. Job Duties",
+      "type": "textarea"
+    },
+    {
+      "id": "part6.1.permRequired",
+      "label": "1. Is a PERM labor certification required for this petition?",
+      "type": "radio"
+    },
+    {
+      "id": "part6.2.permCaseNumber",
+      "label": "2. PERM Case Number",
+      "type": "text"
+    },
+    {
+      "id": "part6.3.permFilingDate",
+      "label": "3. PERM Filing Date",
+      "type": "date"
+    },
+    {
+      "id": "part6.4.permApprovalDate",
+      "label": "4. PERM Approval Date",
+      "type": "date"
+    },
+    {
+      "id": "part7.1.maritalStatus",
+      "label": "1. Beneficiary's Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part7.2.numberOfChildren",
+      "label": "2. Total Number of Children (Unmarried and Under 21)",
+      "type": "text"
+    },
+    {
+      "id": "part8.1.contactName",
+      "label": "1. Contact Person Name",
+      "type": "text"
+    },
+    {
+      "id": "part8.4.certification",
+      "label": "I certify, under penalty of perjury, that all information in this petition is true and correct",
+      "type": "checkbox"
+    }
+  ]
+}

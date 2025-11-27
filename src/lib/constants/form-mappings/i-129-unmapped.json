@@ -1,0 +1,167 @@
+{
+  "formId": "i-129",
+  "unmappedCount": 32,
+  "totalQuestions": 51,
+  "unmappedQuestions": [
+    {
+      "id": "part1.1.petitionType",
+      "label": "1. This petition is being filed for (select one):",
+      "type": "select"
+    },
+    {
+      "id": "part1.2.classification",
+      "label": "2. Classification Requested",
+      "type": "select"
+    },
+    {
+      "id": "part2.1.petitionerType",
+      "label": "1. Petitioner Type",
+      "type": "select"
+    },
+    {
+      "id": "part2.2a.legalName",
+      "label": "2.a. Company/Organization Legal Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.2b.tradeName",
+      "label": "2.b. Trade Name/DBA (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part2.3.ein",
+      "label": "3. Employer Identification Number (EIN)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1a.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1b.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1c.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part3.2.dateOfBirth",
+      "label": "2. Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part3.5.alienNumber",
+      "label": "5. Alien Registration Number (A-Number) (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part4.1.beneficiaryInUS",
+      "label": "1. Is the beneficiary currently in the United States?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.2.currentStatus",
+      "label": "2. If yes, beneficiary's current nonimmigrant status",
+      "type": "text"
+    },
+    {
+      "id": "part4.3.i94Number",
+      "label": "3. I-94 Arrival-Departure Record Number",
+      "type": "text"
+    },
+    {
+      "id": "part4.5.changeOfStatus",
+      "label": "5. Request change of status to classification sought?",
+      "type": "radio"
+    },
+    {
+      "id": "part5.1.jobTitle",
+      "label": "1. Job Title",
+      "type": "text"
+    },
+    {
+      "id": "part5.2.socCode",
+      "label": "2. SOC (ONET/OES) Code",
+      "type": "text"
+    },
+    {
+      "id": "part5.3.naicsCode",
+      "label": "3. NAICS Code",
+      "type": "text"
+    },
+    {
+      "id": "part5.4.startDate",
+      "label": "4. Requested Employment Start Date",
+      "type": "date"
+    },
+    {
+      "id": "part5.5.endDate",
+      "label": "5. Requested Employment End Date",
+      "type": "date"
+    },
+    {
+      "id": "part5.6.wageRate",
+      "label": "6. Rate of Pay",
+      "type": "text"
+    },
+    {
+      "id": "part5.7.rateType",
+      "label": "7. Pay Rate Type",
+      "type": "select"
+    },
+    {
+      "id": "part5.9.jobDuties",
+      "label": "9. Brief Description of Job Duties",
+      "type": "textarea"
+    },
+    {
+      "id": "part6.1.accessToTechnology",
+      "label": "1. Will the beneficiary have access to controlled technology or technical data?",
+      "type": "radio"
+    },
+    {
+      "id": "part6.2.exportLicense",
+      "label": "2. If yes, do you have the required export license or other authorization?",
+      "type": "radio"
+    },
+    {
+      "id": "h1b.1.lcaNumber",
+      "label": "1. Labor Condition Application (LCA) Number",
+      "type": "text"
+    },
+    {
+      "id": "h1b.2.wageLevel",
+      "label": "2. Prevailing Wage Level",
+      "type": "select"
+    },
+    {
+      "id": "h1b.3.capExempt",
+      "label": "3. Is this petition H-1B cap-exempt?",
+      "type": "radio"
+    },
+    {
+      "id": "h1b.4.degreeRequired",
+      "label": "4. Minimum Degree Required for Position",
+      "type": "select"
+    },
+    {
+      "id": "h1b.5.degreeField",
+      "label": "5. Field of Study Required",
+      "type": "text"
+    },
+    {
+      "id": "part8.1.contactName",
+      "label": "1. Contact Person Name",
+      "type": "text"
+    },
+    {
+      "id": "part8.4.certification",
+      "label": "I certify, under penalty of perjury, that all information in this petition is true and correct",
+      "type": "checkbox"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "formId": "i-130",
+  "unmappedCount": 34,
+  "totalQuestions": 57,
+  "unmappedQuestions": [
+    {
+      "id": "part1.relationship",
+      "label": "I am filing this petition for my:",
+      "type": "select"
+    },
+    {
+      "id": "part1.petitionerStatus",
+      "label": "I am:",
+      "type": "radio"
+    },
+    {
+      "id": "part1.gainedLPRThroughAdoption",
+      "label": "Did you gain lawful permanent resident status through adoption?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.alienNumber",
+      "label": "Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part2.uscisOnlineAccount",
+      "label": "USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part2.lastName",
+      "label": "Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.firstName",
+      "label": "Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.middleName",
+      "label": "Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.otherNamesUsed",
+      "label": "Other Names Used",
+      "type": "textarea"
+    },
+    {
+      "id": "part2.dateOfBirth",
+      "label": "Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part2.mailingInCareOf",
+      "label": "In Care Of Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.province",
+      "label": "Province",
+      "type": "text"
+    },
+    {
+      "id": "part2.postalCode",
+      "label": "Postal Code",
+      "type": "text"
+    },
+    {
+      "id": "part2.timesMarried",
+      "label": "How many times have you been married?",
+      "type": "text"
+    },
+    {
+      "id": "part2.currentMaritalStatus",
+      "label": "Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part2.dateOfMarriage",
+      "label": "Date of Current Marriage",
+      "type": "date"
+    },
+    {
+      "id": "part2.placeOfMarriage",
+      "label": "Place of Current Marriage (City, State, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part2.citizenshipThrough",
+      "label": "How did you acquire U.S. citizenship?",
+      "type": "radio"
+    },
+    {
+      "id": "part2.certificateNumber",
+      "label": "Certificate of Naturalization Number or Certificate of Citizenship Number",
+      "type": "text"
+    },
+    {
+      "id": "part2.placeOfNaturalization",
+      "label": "Place of Naturalization or Acquisition (City, State)",
+      "type": "text"
+    },
+    {
+      "id": "part4.alienNumber",
+      "label": "Beneficiary's Alien Registration Number (A-Number)",
+      "type": "text"
+    },
+    {
+      "id": "part4.uscisOnlineAccount",
+      "label": "Beneficiary's USCIS Online Account Number",
+      "type": "text"
+    },
+    {
+      "id": "part4.lastName",
+      "label": "Beneficiary's Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.firstName",
+      "label": "Beneficiary's Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.middleName",
+      "label": "Beneficiary's Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part4.dateOfBirth",
+      "label": "Beneficiary's Date of Birth",
+      "type": "date"
+    },
+    {
+      "id": "part4.hasOtherNames",
+      "label": "Has your relative ever used other names?",
+      "type": "radio"
+    },
+    {
+      "id": "part4.otherNames",
+      "label": "Other Names Used by Beneficiary",
+      "type": "textarea"
+    },
+    {
+      "id": "part4.timesMarried",
+      "label": "How many times has the beneficiary been married?",
+      "type": "text"
+    },
+    {
+      "id": "part4.currentMaritalStatus",
+      "label": "Beneficiary's Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part4.spouseName",
+      "label": "Beneficiary's Current Spouse's Full Name",
+      "type": "text"
+    },
+    {
+      "id": "part4.dateOfMarriage",
+      "label": "Date of Marriage",
+      "type": "date"
+    },
+    {
+      "id": "part4.immigrationPath",
+      "label": "The beneficiary will apply for:",
+      "type": "radio"
+    },
+    {
+      "id": "part4.consularLocation",
+      "label": "If applying for an immigrant visa abroad, provide the location (City, Country) where the beneficiary will apply",
+      "type": "text"
+    }
+  ]
+}

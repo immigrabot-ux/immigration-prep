@@ -1,0 +1,157 @@
+{
+  "formId": "i-864",
+  "unmappedCount": 30,
+  "totalQuestions": 41,
+  "unmappedQuestions": [
+    {
+      "id": "part1.sponsorType",
+      "label": "I am filing this affidavit of support because (select only one box):",
+      "type": "radio"
+    },
+    {
+      "id": "part2.immigrantFamilyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.immigrantGivenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part2.immigrantMiddleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part2.immigrantAlienNumber",
+      "label": "2. Alien Registration Number (A-Number) (if any)",
+      "type": "text"
+    },
+    {
+      "id": "part3.sponsoringPrincipal",
+      "label": "1. Are you sponsoring the principal immigrant named in Part 2?",
+      "type": "radio"
+    },
+    {
+      "id": "part3.familyMembers",
+      "label": "2-7. List family members immigrating at the same time or within 6 months",
+      "type": "textarea"
+    },
+    {
+      "id": "part4.familyName",
+      "label": "1.a. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.givenName",
+      "label": "1.b. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part4.middleName",
+      "label": "1.c. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part4.placeOfBirth",
+      "label": "8. Place of Birth (City/Town, State/Province, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part4.citizenshipStatus",
+      "label": "10. My citizenship/residency status is:",
+      "type": "select"
+    },
+    {
+      "id": "part4.activeDutyMilitary",
+      "label": "11. Are you currently on active duty in the U.S. Armed Forces?",
+      "type": "radio"
+    },
+    {
+      "id": "part5.immigrantsSponsoring",
+      "label": "1. Number of immigrants you are sponsoring (from Parts 2 and 3)",
+      "type": "text"
+    },
+    {
+      "id": "part5.yourself",
+      "label": "2. Yourself (enter 1)",
+      "type": "text"
+    },
+    {
+      "id": "part5.spouse",
+      "label": "3. Your spouse (enter 1 if married, 0 if not)",
+      "type": "text"
+    },
+    {
+      "id": "part5.otherDependents",
+      "label": "5. Number of other dependents listed on your most recent tax return",
+      "type": "text"
+    },
+    {
+      "id": "part5.otherHouseholdMembers",
+      "label": "6. Number of other people living with you who are combining income (Form I-864A)",
+      "type": "text"
+    },
+    {
+      "id": "part5.previouslySponsored",
+      "label": "7. Number of immigrants you previously sponsored (if still obligated)",
+      "type": "text"
+    },
+    {
+      "id": "part5.totalHouseholdSize",
+      "label": "8. TOTAL HOUSEHOLD SIZE (add lines 1-7)",
+      "type": "text"
+    },
+    {
+      "id": "part6.employmentStatus",
+      "label": "1-6. My current employment status is:",
+      "type": "select"
+    },
+    {
+      "id": "part6.employerName",
+      "label": "Employer Name (if employed)",
+      "type": "text"
+    },
+    {
+      "id": "part6.annualIncome",
+      "label": "7. My current individual annual income is:",
+      "type": "text"
+    },
+    {
+      "id": "part6.householdIncome",
+      "label": "8-22. Total income from all household members (including yourself)",
+      "type": "text"
+    },
+    {
+      "id": "part6.meetsIncomeRequirement",
+      "label": "Does your total household income meet or exceed 125% of Federal Poverty Guidelines for your household size?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.useAssets",
+      "label": "Are you using assets to meet the income requirement?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.sponsorAssets",
+      "label": "1. Total value of your assets",
+      "type": "text"
+    },
+    {
+      "id": "part7.householdMemberAssets",
+      "label": "2. Total value of household member's assets",
+      "type": "text"
+    },
+    {
+      "id": "part7.immigrantAssets",
+      "label": "3. Total value of immigrant's assets",
+      "type": "text"
+    },
+    {
+      "id": "part7.totalAssets",
+      "label": "4. TOTAL ASSETS (add lines 1-3)",
+      "type": "text"
+    }
+  ]
+}

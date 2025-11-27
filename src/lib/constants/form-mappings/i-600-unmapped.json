@@ -1,0 +1,157 @@
+{
+  "formId": "i-600",
+  "unmappedCount": 30,
+  "totalQuestions": 51,
+  "unmappedQuestions": [
+    {
+      "id": "part1.1.familyName",
+      "label": "1. Family Name (Last Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.2.givenName",
+      "label": "2. Given Name (First Name)",
+      "type": "text"
+    },
+    {
+      "id": "part1.3.middleName",
+      "label": "3. Middle Name",
+      "type": "text"
+    },
+    {
+      "id": "part1.4.dateOfBirth",
+      "label": "4. Date of Birth (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part1.6.citizenship",
+      "label": "6. U.S. Citizenship Obtained Through",
+      "type": "select"
+    },
+    {
+      "id": "part1.7.maritalStatus",
+      "label": "7. Current Marital Status",
+      "type": "select"
+    },
+    {
+      "id": "part2.6.dateOfMarriage",
+      "label": "6. Date of Marriage (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part2.7.placeOfMarriage",
+      "label": "7. Place of Marriage (City, State/Province, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part3.1.petitionerPriorMarriages",
+      "label": "1. Have you been previously married?",
+      "type": "radio"
+    },
+    {
+      "id": "part3.2.numberOfPriorMarriages",
+      "label": "2. Number of prior marriages",
+      "type": "text"
+    },
+    {
+      "id": "part3.3.priorMarriageEnded",
+      "label": "3. How did your most recent prior marriage end?",
+      "type": "select"
+    },
+    {
+      "id": "part4.8.currentAddress",
+      "label": "8. Child's Current Physical Address",
+      "type": "text"
+    },
+    {
+      "id": "part5.1.orphanBasis",
+      "label": "1. The child is an orphan because:",
+      "type": "select"
+    },
+    {
+      "id": "part5.2.biologicalMotherName",
+      "label": "2. Biological Mother's Full Name",
+      "type": "text"
+    },
+    {
+      "id": "part5.3.biologicalMotherStatus",
+      "label": "3. Biological Mother's Status",
+      "type": "select"
+    },
+    {
+      "id": "part5.4.biologicalFatherName",
+      "label": "4. Biological Father's Full Name",
+      "type": "text"
+    },
+    {
+      "id": "part5.5.biologicalFatherStatus",
+      "label": "5. Biological Father's Status",
+      "type": "select"
+    },
+    {
+      "id": "part6.1.adoptionStatus",
+      "label": "1. Has the child been adopted abroad?",
+      "type": "radio"
+    },
+    {
+      "id": "part6.2.adoptionDate",
+      "label": "2. Date of Adoption (if adopted abroad) (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part6.3.adoptionPlace",
+      "label": "3. Place of Adoption (City, Country)",
+      "type": "text"
+    },
+    {
+      "id": "part6.4.legalCustodyDate",
+      "label": "4. Date Legal Custody Granted (if not yet adopted) (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part6.6.preAdoptionRequirements",
+      "label": "6. Have pre-adoption requirements of the state been met?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.1.i600aApproved",
+      "label": "1. Was Form I-600A (Application for Advance Processing) previously approved?",
+      "type": "radio"
+    },
+    {
+      "id": "part7.2.approvalDate",
+      "label": "2. Date of I-600A Approval (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part7.3.approvalOffice",
+      "label": "3. USCIS Office That Approved I-600A",
+      "type": "text"
+    },
+    {
+      "id": "part7.4.homestudyDate",
+      "label": "4. Date of Home Study Approval (mm/dd/yyyy)",
+      "type": "date"
+    },
+    {
+      "id": "part7.5.homestudyAgency",
+      "label": "5. Name of Home Study Agency",
+      "type": "text"
+    },
+    {
+      "id": "part8.1.certification",
+      "label": "I certify that I will care for the orphan properly if admitted to the United States",
+      "type": "checkbox"
+    },
+    {
+      "id": "part8.2.dutyOfDisclosure",
+      "label": "I understand my duty to notify USCIS of any change in circumstances that affects eligibility",
+      "type": "checkbox"
+    },
+    {
+      "id": "part8.3.penaltyOfPerjury",
+      "label": "I certify, under penalty of perjury, that all information in this petition is true and correct",
+      "type": "checkbox"
+    }
+  ]
+}
