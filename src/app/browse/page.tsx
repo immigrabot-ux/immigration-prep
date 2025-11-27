@@ -3,7 +3,6 @@ import { createClient } from '@/lib/supabase/server';
 
 interface BrowsePageProps {
   searchParams: Promise<{
-    package?: string;
     category?: string;
     form?: string;
   }>;
@@ -18,7 +17,6 @@ export default async function BrowsePage({ searchParams }: BrowsePageProps) {
 
   return (
     <BrowseClient
-      highlightPackage={params.package}
       highlightCategory={params.category}
       highlightForm={params.form}
       isAuthenticated={!!user}
