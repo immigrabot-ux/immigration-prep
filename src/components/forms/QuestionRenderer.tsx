@@ -35,7 +35,6 @@ export function QuestionRenderer({ question }: QuestionRendererProps) {
           />
         );
 
-      case 'phone':
       case 'tel':
       case 'ssn':
         return (
