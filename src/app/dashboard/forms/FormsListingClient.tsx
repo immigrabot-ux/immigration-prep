@@ -208,7 +208,7 @@ export function FormsListingClient({ applications }: FormsListingClientProps) {
                                   {getStatusIcon(app.status)}
                                 </div>
                                 <CardDescription className="line-clamp-2">
-                                  {form.title}
+                                  {form.name}
                                 </CardDescription>
                               </div>
                             </div>
