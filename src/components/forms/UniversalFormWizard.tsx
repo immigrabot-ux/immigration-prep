@@ -145,7 +145,6 @@ export function UniversalFormWizard({
           return (
             <Input
               type="file"
-              accept={question.accept}
               onChange={(e) => updateAnswer(question.id, e.target.files?.[0])}
             />
           );
