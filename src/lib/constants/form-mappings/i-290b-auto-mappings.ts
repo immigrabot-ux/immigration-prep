@@ -38,7 +38,7 @@ export const I_290B_AUTO_MAPPINGS: FieldMapping[] = [
  * 0 mappings
  */
 export const HIGH_CONFIDENCE_MAPPINGS = I_290B_AUTO_MAPPINGS.filter((_, i) => {
-  const confidences = [];
+  const confidences: number[] = [];
   return confidences[i] >= 15;
 });
 
@@ -47,6 +47,6 @@ export const HIGH_CONFIDENCE_MAPPINGS = I_290B_AUTO_MAPPINGS.filter((_, i) => {
  * 0 mappings
  */
 export const NEEDS_REVIEW_MAPPINGS = I_290B_AUTO_MAPPINGS.filter((_, i) => {
-  const confidences = [];
+  const confidences: number[] = [];
   return confidences[i] < 10;
 });
