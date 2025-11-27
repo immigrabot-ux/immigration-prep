@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -11,10 +11,23 @@ import Link from 'next/link';
 
 export function LoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  // Check for error in URL params (from callback)
+  useEffect(() => {
+    const urlError = searchParams.get('error');
+    if (urlError) {
+      if (urlError === 'auth_callback_failed') {
+        setError('Email verification failed. Please try logging in again or contact support.');
+      } else if (urlError === 'unexpected_error') {
+        setError('An unexpected error occurred during authentication. Please try again.');
+      }
+    }
+  }, [searchParams]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,21 +36,37 @@ export function LoginForm() {
 
     try {
       const supabase = createClient();
+      console.log('🔐 Attempting login with email:', email);
+
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
       if (error) {
+        console.error('❌ Login error:', error);
+        console.error('Error details:', {
+          message: error.message,
+          status: error.status,
+          name: error.name,
+        });
         setError(error.message);
         return;
       }
 
+      console.log('✅ Login successful:', {
+        userId: data.user?.id,
+        email: data.user?.email,
+        hasSession: !!data.session,
+      });
+
       if (data.user) {
+        console.log('🔄 Redirecting to dashboard...');
         router.push('/dashboard');
         router.refresh();
       }
     } catch (err) {
+      console.error('💥 Unexpected error during login:', err);
       setError('An unexpected error occurred');
     } finally {
       setLoading(false);

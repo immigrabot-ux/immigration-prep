@@ -1,6 +1,8 @@
 import { LoginForm } from '@/components/auth/LoginForm';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Suspense } from 'react';
+import { Loader2 } from 'lucide-react';
 
 export const metadata = {
   title: 'Log In | ImmigrationPrep',
@@ -26,7 +28,13 @@ export default function LoginPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <LoginForm />
+            <Suspense fallback={
+              <div className="flex justify-center py-8">
+                <Loader2 className="h-6 w-6 animate-spin" />
+              </div>
+            }>
+              <LoginForm />
+            </Suspense>
           </CardContent>
         </Card>
 
