@@ -174,7 +174,7 @@ export function DashboardClient({
                         <div className="flex-1">
                           <CardTitle className="text-lg">{form.id}</CardTitle>
                           <CardDescription className="line-clamp-1">
-                            {form.title}
+                            {form.name}
                           </CardDescription>
                         </div>
                         {getStatusIcon(app.status)}
