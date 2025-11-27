@@ -101,13 +101,13 @@ export function IndividualFormCard({ form }: IndividualFormCardProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="pt-3">
+      <CardFooter className="pt-3 flex gap-2">
         <Button
           onClick={handleStartForm}
-          variant="outline"
-          className="w-full"
+          variant="default"
+          className="flex-1"
         >
-          Start Form
+          Buy for $60
         </Button>
       </CardFooter>
     </Card>

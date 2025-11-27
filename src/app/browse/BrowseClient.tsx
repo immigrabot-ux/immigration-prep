@@ -5,21 +5,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { FORM_PACKAGES } from '@/lib/constants/form-packages';
 import { FORM_REGISTRY } from '@/lib/constants/forms-registry';
 import { FileText, DollarSign, Clock, Package, Check, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 interface BrowseClientProps {
-  highlightPackage?: string;
   highlightCategory?: string;
   highlightForm?: string;
   isAuthenticated?: boolean;
 }
 
 export function BrowseClient({
-  highlightPackage,
   highlightCategory,
   highlightForm,
   isAuthenticated = false,
@@ -34,12 +31,12 @@ export function BrowseClient({
     }
 
     // Scroll to highlighted element after a short delay
-    if (highlightPackage || highlightCategory || highlightForm) {
+    if (highlightCategory || highlightForm) {
       setTimeout(() => {
         highlightRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 100);
     }
-  }, [highlightPackage, highlightCategory, highlightForm]);
+  }, [highlightCategory, highlightForm]);
 
   // Category display mapping
   const categoryLabels: Record<string, string> = {
@@ -125,162 +122,41 @@ export function BrowseClient({
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Popular Packages */}
+        {/* Pricing Banner */}
         <section className="mb-12">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold tracking-tight mb-2">
-              Popular Packages
-            </h2>
-            <p className="text-muted-foreground">
-              Save time and money with our bundled form packages
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {FORM_PACKAGES.filter((pkg) => pkg.popular).map((pkg) => (
-              <div
-                key={pkg.id}
-                ref={highlightPackage === pkg.id ? highlightRef : null}
-                className={highlightPackage === pkg.id ? 'animate-pulse' : ''}
-              >
-                <Card
-                  className={cn(
-                    'relative overflow-hidden transition-all hover:shadow-lg h-full',
-                    pkg.popular && 'border-primary border-2'
-                  )}
-                >
-                  {pkg.popular && (
-                    <div className="absolute top-0 right-0">
-                      <Badge className="rounded-none rounded-bl-lg bg-primary">
-                        <TrendingUp className="mr-1 h-3 w-3" />
-                        Most Popular
-                      </Badge>
-                    </div>
-                  )}
-
-                  <CardHeader>
-                    <div className="flex items-start gap-3">
-                      <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Package className="h-6 w-6 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <CardTitle className="text-xl">{pkg.name}</CardTitle>
-                        <CardDescription className="mt-1">{pkg.description}</CardDescription>
-                      </div>
-                    </div>
-                  </CardHeader>
-
-                  <CardContent className="space-y-4">
-                    {/* Pricing */}
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-3xl font-bold">${pkg.price}</span>
-                    </div>
-
-                    {/* Included Forms */}
-                    <div className="space-y-2">
-                      <p className="text-sm font-medium text-muted-foreground">Includes:</p>
-                      <ul className="space-y-2">
-                        {pkg.formIds.map((formId) => {
-                          const form = FORM_REGISTRY[formId.toLowerCase()];
-                          return (
-                            <li key={formId} className="flex items-start gap-2 text-sm">
-                              <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                              <span>
-                                <span className="font-medium">{formId}</span>
-                                {form && ` - ${form.name}`}
-                              </span>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-
-                    <div className="space-y-2">
-                      {isAuthenticated ? (
-                        <Button asChild className="w-full" size="lg">
-                          <Link href="/dashboard">Go to Dashboard</Link>
-                        </Button>
-                      ) : (
-                        <>
-                          <Button asChild className="w-full" size="lg">
-                            <Link href="/signup">Sign Up to Start</Link>
-                          </Button>
-                          <Button asChild variant="outline" className="w-full" size="sm">
-                            <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
-                          </Button>
-                        </>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
+          <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl">Simple Pricing - All Forms $60</CardTitle>
+              <CardDescription className="text-lg mt-2">
+                Buy multiple forms and save automatically!
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$60</div>
+                  <div className="text-sm text-gray-600 mt-1">1 Form</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$100</div>
+                  <div className="text-sm text-gray-600 mt-1">2 Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $20</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$140</div>
+                  <div className="text-sm text-gray-600 mt-1">3 Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $40</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$200</div>
+                  <div className="text-sm text-gray-600 mt-1">4+ Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $40+</div>
+                </div>
               </div>
-            ))}
-          </div>
+            </CardContent>
+          </Card>
         </section>
 
-        {/* All Packages */}
-        {FORM_PACKAGES.filter((pkg) => !pkg.popular).length > 0 && (
-          <section className="mb-12">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold tracking-tight mb-2">
-                All Packages
-              </h2>
-              <p className="text-muted-foreground">
-                Additional form packages for specific needs
-              </p>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {FORM_PACKAGES.filter((pkg) => !pkg.popular).map((pkg) => (
-                <div
-                  key={pkg.id}
-                  ref={highlightPackage === pkg.id ? highlightRef : null}
-                  className={highlightPackage === pkg.id ? 'animate-pulse' : ''}
-                >
-                  <Card className="transition-all hover:shadow-lg h-full flex flex-col">
-                    <CardHeader>
-                      <div className="flex items-start gap-3">
-                        <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <Package className="h-5 w-5 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <CardTitle className="text-lg">{pkg.name}</CardTitle>
-                          <CardDescription className="mt-1 text-sm">
-                            {pkg.description}
-                          </CardDescription>
-                        </div>
-                      </div>
-                    </CardHeader>
-
-                    <CardContent className="flex-1 space-y-3">
-                      <div className="text-2xl font-bold">${pkg.price}</div>
-                      <p className="text-sm text-muted-foreground">
-                        {pkg.formIds.length} form{pkg.formIds.length > 1 ? 's' : ''} included
-                      </p>
-                    </CardContent>
-
-                    <CardContent className="pt-0 space-y-2">
-                      {isAuthenticated ? (
-                        <Button asChild className="w-full">
-                          <Link href="/dashboard">Go to Dashboard</Link>
-                        </Button>
-                      ) : (
-                        <>
-                          <Button asChild className="w-full">
-                            <Link href="/signup">Sign Up to Start</Link>
-                          </Button>
-                          <Button asChild variant="outline" className="w-full" size="sm">
-                            <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
-                          </Button>
-                        </>
-                      )}
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* Individual Forms */}
         <section>

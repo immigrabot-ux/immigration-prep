@@ -169,7 +169,7 @@ const I130_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '45-60 minutes',
     filingFee: 535,
-    price: 79,
+    price: 60,
     sections: [
         {
             id: 'part1-relationship',
@@ -665,7 +665,7 @@ const I485_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '90-120 minutes',
     filingFee: 1140,
-    price: 99,
+    price: 60,
     sections: [
         // PART 1: Information About You
         {
@@ -1452,7 +1452,7 @@ const I765_DEFINITION: FormDefinition = {
     category: 'work_authorization',
     estimatedTime: '30-45 minutes',
     filingFee: 410,
-    price: 49,
+    price: 60,
     sections: [
         // PART 1: Reason for Applying
         {
@@ -1858,7 +1858,7 @@ const I131_DEFINITION: FormDefinition = {
     category: 'travel',
     estimatedTime: '30-45 minutes',
     filingFee: 575,
-    price: 49,
+    price: 60,
     sections: [
         // PART 1: Application Type
         {
@@ -2224,7 +2224,7 @@ const I864_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '60-90 minutes',
     filingFee: 0,
-    price: 79,
+    price: 60,
     sections: [
         // PART 1: Basis for Filing Affidavit of Support
         {
@@ -2626,7 +2626,7 @@ const N400_DEFINITION: FormDefinition = {
     category: 'citizenship',
     estimatedTime: '90-120 minutes',
     filingFee: 640,
-    price: 99,
+    price: 60,
     sections: [
         // PART 1: Information About Your Eligibility
         {
@@ -3184,7 +3184,7 @@ const I751_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '60-90 minutes',
     filingFee: 595,
-    price: 99,
+    price: 60,
     sections: [
         // PART 1: Information About You (The Conditional Resident)
         {
@@ -3526,7 +3526,7 @@ const I129_DEFINITION: FormDefinition = {
     category: 'work_authorization',
     estimatedTime: '90-120 minutes',
     filingFee: 460,
-    price: 149,
+    price: 60,
     status: 'active',
     sections: [
         {
@@ -4003,7 +4003,7 @@ const I140_DEFINITION: FormDefinition = {
     category: 'work_authorization',
     estimatedTime: '120-180 minutes',
     filingFee: 715,
-    price: 149,
+    price: 60,
     status: 'active',
     sections: [
         {
@@ -4385,7 +4385,7 @@ const I539_DEFINITION: FormDefinition = {
     category: 'status_change',
     estimatedTime: '60-90 minutes',
     filingFee: 420,
-    price: 79,
+    price: 60,
     status: 'active',
     sections: [
         {
@@ -4713,7 +4713,7 @@ const I129F_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '60-90 minutes',
     filingFee: 535,
-    price: 179,
+    price: 60,
     sections: [
         {
             id: 'part1-petitioner-info',
@@ -5231,7 +5231,7 @@ const I360_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '90-120 minutes',
     filingFee: 435,
-    price: 149,
+    price: 60,
     sections: [
         {
             id: 'part1-petitioner-info',
@@ -5707,7 +5707,7 @@ const I600_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '90-120 minutes',
     filingFee: 775,
-    price: 149,
+    price: 60,
     sections: [
         {
             id: 'part1-petitioner-info',
@@ -6266,7 +6266,7 @@ const I589_DEFINITION: FormDefinition = {
     category: 'humanitarian',
     estimatedTime: '180-240 minutes',
     filingFee: 0,
-    price: 0,
+    price: 60,
     status: 'active',
     sections: [
         {
@@ -6727,7 +6727,7 @@ const I730_DEFINITION: FormDefinition = {
     category: 'humanitarian',
     estimatedTime: '60-90 minutes',
     filingFee: 0,
-    price: 99, // Medium-complex form
+    price: 60, // Medium-complex form
     sections: [
         {
             id: 'petitioner-info',
@@ -6816,7 +6816,7 @@ const I821_DEFINITION: FormDefinition = {
     category: 'humanitarian',
     estimatedTime: '45-60 minutes',
     filingFee: 50,
-    price: 99, // Medium-complex form
+    price: 60, // Medium-complex form
     sections: [
         {
             id: 'applicant-info',
@@ -6893,7 +6893,7 @@ const I9_DEFINITION: FormDefinition = {
     category: 'work_authorization',
     estimatedTime: '15-20 minutes',
     filingFee: 0,
-    price: 99,
+    price: 60,
     sections: [
         {
             id: 'section1-employee-info',
@@ -7275,7 +7275,7 @@ const I90_DEFINITION: FormDefinition = {
     category: 'other',
     estimatedTime: '30-45 minutes',
     filingFee: 455,
-    price: 49,
+    price: 60,
     sections: [
         {
             id: 'part1-information-about-you',
@@ -7700,7 +7700,7 @@ const I821D_DEFINITION: FormDefinition = {
     category: 'humanitarian',
     estimatedTime: '45-60 minutes',
     filingFee: 0,
-    price: 199,
+    price: 60,
     sections: [
         {
             id: 'part1',
@@ -7818,7 +7818,7 @@ const I212_DEFINITION: FormDefinition = {
     category: 'other',
     estimatedTime: '60-90 minutes',
     filingFee: 1050,
-    price: 299,
+    price: 60,
     sections: [
         {
             id: 'part1',
@@ -7912,7 +7912,7 @@ const I290B_DEFINITION: FormDefinition = {
     category: 'other',
     estimatedTime: '45-60 minutes',
     filingFee: 675,
-    price: 249,
+    price: 60,
     sections: [
         {
             id: 'part1',
@@ -8000,7 +8000,7 @@ const I601_DEFINITION: FormDefinition = {
     category: 'other',
     estimatedTime: '90-120 minutes',
     filingFee: 1050,
-    price: 399,
+    price: 60,
     sections: [
         {
             id: 'part1',
@@ -8117,7 +8117,7 @@ const I601A_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '75-90 minutes',
     filingFee: 715,
-    price: 349,
+    price: 60,
     sections: [
         {
             id: 'part1',

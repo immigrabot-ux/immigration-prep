@@ -4,7 +4,6 @@ import { DashboardClient } from './DashboardClient';
 
 interface DashboardPageProps {
   searchParams: Promise<{
-    package?: string;
     category?: string;
     form?: string;
   }>;
@@ -37,7 +36,6 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
     <DashboardClient
       applications={applications || []}
       user={user}
-      highlightPackage={params.package}
       highlightCategory={params.category}
       highlightForm={params.form}
     />

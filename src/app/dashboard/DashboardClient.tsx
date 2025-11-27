@@ -5,9 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { FormPackageCard } from '@/components/dashboard/FormPackageCard';
 import { IndividualFormCard } from '@/components/dashboard/IndividualFormCard';
-import { FORM_PACKAGES } from '@/lib/constants/form-packages';
 import { FORM_REGISTRY } from '@/lib/constants/forms-registry';
 import { FileText, ArrowRight, Clock, CheckCircle2, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -17,7 +15,6 @@ import { AuthButton } from '@/components/auth/AuthButton';
 interface DashboardClientProps {
   applications: any[];
   user: User;
-  highlightPackage?: string;
   highlightCategory?: string;
   highlightForm?: string;
 }
@@ -25,7 +22,6 @@ interface DashboardClientProps {
 export function DashboardClient({
   applications,
   user,
-  highlightPackage,
   highlightCategory,
   highlightForm,
 }: DashboardClientProps) {
@@ -39,12 +35,12 @@ export function DashboardClient({
     }
 
     // Scroll to highlighted element after a short delay
-    if (highlightPackage || highlightCategory || highlightForm) {
+    if (highlightCategory || highlightForm) {
       setTimeout(() => {
         highlightRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 100);
     }
-  }, [highlightPackage, highlightCategory, highlightForm]);
+  }, [highlightCategory, highlightForm]);
 
   // Category display mapping
   const categoryLabels: Record<string, string> = {
@@ -212,55 +208,40 @@ export function DashboardClient({
           </section>
         )}
 
-        {/* Popular Packages */}
+        {/* Pricing Info */}
         <section className="mb-12">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold tracking-tight mb-2">
-              Popular Packages
-            </h2>
-            <p className="text-muted-foreground">
-              Save time and money with our bundled form packages
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {FORM_PACKAGES.filter((pkg) => pkg.popular).map((pkg) => (
-              <div
-                key={pkg.id}
-                ref={highlightPackage === pkg.id ? highlightRef : null}
-                className={highlightPackage === pkg.id ? 'animate-pulse' : ''}
-              >
-                <FormPackageCard package={pkg} />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* All Packages */}
-        {FORM_PACKAGES.filter((pkg) => !pkg.popular).length > 0 && (
-          <section className="mb-12">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold tracking-tight mb-2">
-                All Packages
-              </h2>
-              <p className="text-muted-foreground">
-                Additional form packages for specific needs
-              </p>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {FORM_PACKAGES.filter((pkg) => !pkg.popular).map((pkg) => (
-                <div
-                  key={pkg.id}
-                  ref={highlightPackage === pkg.id ? highlightRef : null}
-                  className={highlightPackage === pkg.id ? 'animate-pulse' : ''}
-                >
-                  <FormPackageCard package={pkg} />
+          <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <CardHeader>
+              <CardTitle className="text-2xl">Simple Pricing</CardTitle>
+              <CardDescription className="text-base">
+                All forms are $60 each. Buy multiple forms and save automatically!
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-4 gap-4">
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$60</div>
+                  <div className="text-sm text-gray-600 mt-1">1 Form</div>
                 </div>
-              ))}
-            </div>
-          </section>
-        )}
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$100</div>
+                  <div className="text-sm text-gray-600 mt-1">2 Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $20</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$140</div>
+                  <div className="text-sm text-gray-600 mt-1">3 Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $40</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600">$200</div>
+                  <div className="text-sm text-gray-600 mt-1">4+ Forms</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">Save $40+</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Individual Forms */}
         <section>
