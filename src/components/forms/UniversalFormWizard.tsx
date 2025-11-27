@@ -67,7 +67,6 @@ export function UniversalFormWizard({
             />
           );
 
-        case 'phone':
         case 'tel':
         case 'ssn':
           return (
