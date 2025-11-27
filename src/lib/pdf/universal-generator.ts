@@ -1,5 +1,5 @@
 import { PDFDocument, PDFForm, PDFTextField, PDFCheckBox, PDFDropdown, rgb, StandardFonts } from 'pdf-lib';
-import { FormDefinition, FieldMapping } from '@/lib/constants/forms-registry';
+import { FormDefinition, PDFFieldMapping } from '@/lib/constants/forms-registry';
 import {
   flattenAnswers,
   getNestedValue,
