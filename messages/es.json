@@ -69,7 +69,7 @@
     "viewDetails": "Ver Detalles"
   },
   "forms": {
-    "buyNow": "Comprar por $60",
+    "buyNow": "Comprar por ${price}",
     "buyPackage": "Comprar Paquete",
     "startApplication": "Comenzar Solicitud",
     "continueApplication": "Continuar Solicitud",
@@ -113,7 +113,7 @@
     }
   },
   "pricing": {
-    "title": "Precios Simples - Todos los Formularios $60",
+    "title": "Precios Simples - Todos los Formularios $70",
     "subtitle": "¡Compre múltiples formularios y ahorre automáticamente!",
     "oneForm": "1 Formulario",
     "twoForms": "2 Formularios",
@@ -130,7 +130,8 @@
     "noFormsFound": "No se encontraron formularios en esta categoría",
     "signUpToStart": "Regístrese para Comenzar",
     "tryPreview": "Pruebe Vista Previa",
-    "goToDashboard": "Ir al Panel Principal"
+    "goToDashboard": "Ir al Panel Principal",
+    "go": "Ir"
   },
   "common": {
     "next": "Siguiente",
@@ -274,6 +275,27 @@
           "both": "Sí, ambos estuvimos casados antes"
         }
       }
+    }
+  },
+  "purchaseRequired": {
+    "title": "Compra Requerida",
+    "authenticationRequired": "Autenticación Requerida",
+    "signIn": "Iniciar Sesión",
+    "createAccount": "Crear Cuenta",
+    "backToDashboard": "Volver al Panel",
+    "buyNow": "Comprar Ahora",
+    "processing": "Procesando...",
+    "includes": "Incluye",
+    "save": "Ahorre",
+    "messages": {
+      "notAuthenticated": "Por favor inicie sesión para acceder a este formulario.",
+      "accessRevoked": "Su acceso a este formulario ha sido revocado. Por favor contacte soporte.",
+      "expired": "Su acceso a este formulario ha expirado.",
+      "noPurchase": "Necesita comprar un paquete que incluya este formulario para acceder a él.",
+      "tryingToAccess": "Está intentando acceder a:",
+      "purchasePackage": "Compre un paquete que incluya este formulario:",
+      "needHelp": "¿Necesita ayuda?",
+      "contactSupport": "Si cree que esto es un error, por favor contacte a nuestro equipo de soporte."
     }
   }
 }

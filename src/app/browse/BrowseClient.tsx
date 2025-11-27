@@ -9,6 +9,7 @@ import { FORM_REGISTRY } from '@/lib/constants/forms-registry';
 import { FileText, DollarSign, Clock, Package, Check, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface BrowseClientProps {
   highlightCategory?: string;
@@ -21,6 +22,7 @@ export function BrowseClient({
   highlightForm,
   isAuthenticated = false,
 }: BrowseClientProps) {
+  const t = useTranslations();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const highlightRef = useRef<HTMLDivElement>(null);
 
@@ -37,19 +39,6 @@ export function BrowseClient({
       }, 100);
     }
   }, [highlightCategory, highlightForm]);
-
-  // Category display mapping
-  const categoryLabels: Record<string, string> = {
-    all: 'All Forms',
-    family: 'Family Immigration',
-    employment: 'Employment',
-    work_authorization: 'Work Authorization',
-    citizenship: 'Citizenship',
-    travel: 'Travel',
-    humanitarian: 'Humanitarian',
-    status_change: 'Status Change',
-    other: 'Other',
-  };
 
   // Get unique categories from forms
   const categories = ['all', ...new Set(Object.values(FORM_REGISTRY).map((f) => f.category))];
@@ -87,22 +76,12 @@ export function BrowseClient({
   };
 
   const getStatusLabel = (status?: string) => {
-    if (!status || status === 'active') return 'Active';
-    return 'Beta';
+    if (!status || status === 'active') return t('forms.status.active');
+    return t('forms.status.beta');
   };
 
   const getCategoryLabel = (category: string) => {
-    const labels: Record<string, string> = {
-      family: 'Family',
-      citizenship: 'Citizenship',
-      work_authorization: 'Work Auth',
-      employment: 'Employment',
-      travel: 'Travel',
-      humanitarian: 'Humanitarian',
-      status_change: 'Status Change',
-      other: 'Other',
-    };
-    return labels[category] || category;
+    return t(`forms.category.${category}`) || category;
   };
 
   return (
@@ -112,10 +91,10 @@ export function BrowseClient({
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight mb-3">
-              Browse All Immigration Forms
+              {t('browse.title')}
             </h1>
             <p className="text-xl text-muted-foreground">
-              Explore our complete collection of 18 USCIS forms and convenient packages. Sign up to get started.
+              {t('browse.subtitle')}
             </p>
           </div>
         </div>
@@ -126,31 +105,31 @@ export function BrowseClient({
         <section className="mb-12">
           <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl">Simple Pricing - All Forms $60</CardTitle>
+              <CardTitle className="text-3xl">{t('pricing.title')}</CardTitle>
               <CardDescription className="text-lg mt-2">
-                Buy multiple forms and save automatically!
+                {t('pricing.subtitle')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600">$60</div>
-                  <div className="text-sm text-gray-600 mt-1">1 Form</div>
+                  <div className="text-3xl font-bold text-blue-600">$70</div>
+                  <div className="text-sm text-gray-600 mt-1">{t('pricing.oneForm')}</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600">$100</div>
-                  <div className="text-sm text-gray-600 mt-1">2 Forms</div>
-                  <div className="text-xs text-green-600 font-medium mt-1">Save $20</div>
+                  <div className="text-3xl font-bold text-blue-600">$120</div>
+                  <div className="text-sm text-gray-600 mt-1">{t('pricing.twoForms')}</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">{t('pricing.save')} $20</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600">$140</div>
-                  <div className="text-sm text-gray-600 mt-1">3 Forms</div>
-                  <div className="text-xs text-green-600 font-medium mt-1">Save $40</div>
+                  <div className="text-3xl font-bold text-blue-600">$170</div>
+                  <div className="text-sm text-gray-600 mt-1">{t('pricing.threeForms')}</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">{t('pricing.save')} $40</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600">$200</div>
-                  <div className="text-sm text-gray-600 mt-1">4+ Forms</div>
-                  <div className="text-xs text-green-600 font-medium mt-1">Save $40+</div>
+                  <div className="text-3xl font-bold text-blue-600">$240</div>
+                  <div className="text-sm text-gray-600 mt-1">{t('pricing.fourPlusForms')}</div>
+                  <div className="text-xs text-green-600 font-medium mt-1">{t('pricing.save')} $40+</div>
                 </div>
               </div>
             </CardContent>
@@ -162,10 +141,10 @@ export function BrowseClient({
         <section>
           <div className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight mb-2">
-              Individual Forms
+              {t('browse.individualForms')}
             </h2>
             <p className="text-muted-foreground">
-              Or start with a single form application
+              {t('browse.individualFormsSubtitle')}
             </p>
           </div>
 
@@ -182,7 +161,7 @@ export function BrowseClient({
                   value={category}
                   className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                 >
-                  {categoryLabels[category] || category}
+                  {category === 'all' ? t('browse.allForms') : getCategoryLabel(category)}
                   <Badge variant="secondary" className="ml-2">
                     {getCategoryCount(category)}
                   </Badge>
@@ -232,7 +211,7 @@ export function BrowseClient({
                       {form.estimatedTime && (
                         <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
                           <Clock className="h-4 w-4" />
-                          <span>{form.estimatedTime}</span>
+                          <span>{t('forms.estimatedTime')}: {form.estimatedTime}</span>
                         </div>
                       )}
                     </div>
@@ -241,15 +220,15 @@ export function BrowseClient({
                   <CardContent className="pt-0 space-y-2">
                     {isAuthenticated ? (
                       <Button asChild variant="default" className="w-full">
-                        <Link href="/dashboard">Go to Dashboard</Link>
+                        <Link href="/dashboard">{t('browse.goToDashboard')}</Link>
                       </Button>
                     ) : (
                       <>
                         <Button asChild variant="default" className="w-full">
-                          <Link href="/signup">Sign Up to Start</Link>
+                          <Link href="/signup">{t('browse.signUpToStart')}</Link>
                         </Button>
                         <Button asChild variant="outline" className="w-full" size="sm">
-                          <Link href={`/preview/${form.id}`}>Try Preview</Link>
+                          <Link href={`/preview/${form.id}`}>{t('browse.tryPreview')}</Link>
                         </Button>
                       </>
                     )}
@@ -262,7 +241,7 @@ export function BrowseClient({
           {filteredForms.length === 0 && (
             <Card className="p-12 text-center">
               <p className="text-muted-foreground">
-                No forms found in this category
+                {t('browse.noFormsFound')}
               </p>
             </Card>
           )}

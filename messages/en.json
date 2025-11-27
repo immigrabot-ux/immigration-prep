@@ -69,7 +69,7 @@
     "viewDetails": "View Details"
   },
   "forms": {
-    "buyNow": "Buy for $60",
+    "buyNow": "Buy for ${price}",
     "buyPackage": "Buy Package",
     "startApplication": "Start Application",
     "continueApplication": "Continue Application",
@@ -113,7 +113,7 @@
     }
   },
   "pricing": {
-    "title": "Simple Pricing - All Forms $60",
+    "title": "Simple Pricing - All Forms $70",
     "subtitle": "Buy multiple forms and save automatically!",
     "oneForm": "1 Form",
     "twoForms": "2 Forms",
@@ -130,7 +130,8 @@
     "noFormsFound": "No forms found in this category",
     "signUpToStart": "Sign Up to Start",
     "tryPreview": "Try Preview",
-    "goToDashboard": "Go to Dashboard"
+    "goToDashboard": "Go to Dashboard",
+    "go": "Go"
   },
   "common": {
     "next": "Next",
@@ -274,6 +275,27 @@
           "both": "Yes, we were both married before"
         }
       }
+    }
+  },
+  "purchaseRequired": {
+    "title": "Purchase Required",
+    "authenticationRequired": "Authentication Required",
+    "signIn": "Sign In",
+    "createAccount": "Create Account",
+    "backToDashboard": "Back to Dashboard",
+    "buyNow": "Buy Now",
+    "processing": "Processing...",
+    "includes": "Includes",
+    "save": "Save",
+    "messages": {
+      "notAuthenticated": "Please sign in to access this form.",
+      "accessRevoked": "Your access to this form has been revoked. Please contact support.",
+      "expired": "Your access to this form has expired.",
+      "noPurchase": "You need to purchase a package that includes this form to access it.",
+      "tryingToAccess": "You're trying to access:",
+      "purchasePackage": "Purchase a package that includes this form:",
+      "needHelp": "Need help?",
+      "contactSupport": "If you believe this is an error, please contact our support team for assistance."
     }
   }
 }

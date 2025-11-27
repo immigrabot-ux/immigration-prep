@@ -169,7 +169,7 @@ const I130_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '45-60 minutes',
     filingFee: 535,
-    price: 60,
+    price: 70,
     sections: [
         {
             id: 'part1-relationship',
@@ -665,7 +665,7 @@ const I485_DEFINITION: FormDefinition = {
     category: 'family',
     estimatedTime: '90-120 minutes',
     filingFee: 1140,
-    price: 60,
+    price: 70,
     sections: [
         // PART 1: Information About You
         {

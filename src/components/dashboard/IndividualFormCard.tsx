@@ -99,7 +99,7 @@ export function IndividualFormCard({ form }: IndividualFormCardProps) {
           variant="default"
           className="flex-1"
         >
-          {t('buyNow')}
+          {t('buyNow', { price: form.price || 70 })}
         </Button>
       </CardFooter>
     </Card>
