@@ -117,7 +117,6 @@ export function QuestionRenderer({ question }: QuestionRendererProps) {
           <Input
             {...register(question.id)}
             type="file"
-            accept={question.accept}
           />
         );
 
