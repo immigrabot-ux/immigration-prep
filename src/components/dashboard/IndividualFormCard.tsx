@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { FileText, Clock, DollarSign } from 'lucide-react';
 import { FormDefinition } from '@/lib/constants/forms-registry';
+import { useTranslations } from 'next-intl';
 
 interface IndividualFormCardProps {
   form: FormDefinition;
@@ -13,6 +14,7 @@ interface IndividualFormCardProps {
 
 export function IndividualFormCard({ form }: IndividualFormCardProps) {
   const router = useRouter();
+  const t = useTranslations('forms');
 
   const handleStartForm = () => {
     // Navigate directly to the form page
@@ -42,22 +44,12 @@ export function IndividualFormCard({ form }: IndividualFormCardProps) {
   };
 
   const getStatusLabel = (status?: string) => {
-    if (!status || status === 'active') return 'Active';
-    return 'Beta';
+    if (!status || status === 'active') return t('status.active');
+    return t('status.beta');
   };
 
   const getCategoryLabel = (category: string) => {
-    const labels: Record<string, string> = {
-      family: 'Family',
-      citizenship: 'Citizenship',
-      work_authorization: 'Work Auth',
-      employment: 'Employment',
-      travel: 'Travel',
-      humanitarian: 'Humanitarian',
-      status_change: 'Status Change',
-      other: 'Other',
-    };
-    return labels[category] || category;
+    return t(`category.${category}` as any) || category;
   };
 
   return (
@@ -107,7 +99,7 @@ export function IndividualFormCard({ form }: IndividualFormCardProps) {
           variant="default"
           className="flex-1"
         >
-          Buy for $60
+          {t('buyNow')}
         </Button>
       </CardFooter>
     </Card>

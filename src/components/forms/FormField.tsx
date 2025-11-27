@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { FormField as FormFieldType } from '@/lib/constants/forms';
 import { Info } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface FormFieldProps {
     field: FormFieldType;
@@ -17,6 +18,8 @@ interface FormFieldProps {
 }
 
 export default function FormField({ field, value, onChange, error }: FormFieldProps) {
+    const t = useTranslations();
+
     const renderInput = () => {
         switch (field.type) {
             case 'text':
@@ -26,7 +29,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
                     <Input
                         id={field.id}
                         type={field.type}
-                        placeholder={field.placeholder}
+                        placeholder={field.placeholder ? t(field.placeholder) : ''}
                         value={value || ''}
                         onChange={(e) => onChange(e.target.value)}
                         className={error ? 'border-red-500' : ''}
@@ -37,7 +40,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
                 return (
                     <Textarea
                         id={field.id}
-                        placeholder={field.placeholder}
+                        placeholder={field.placeholder ? t(field.placeholder) : ''}
                         value={value || ''}
                         onChange={(e) => onChange(e.target.value)}
                         className={error ? 'border-red-500' : ''}
@@ -49,7 +52,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
                 return (
                     <Select value={value || ''} onValueChange={onChange}>
                         <SelectTrigger className={error ? 'border-red-500' : ''}>
-                            <SelectValue placeholder="Select an option" />
+                            <SelectValue placeholder={t('common.selectOption') || "Select an option"} />
                         </SelectTrigger>
                         <SelectContent>
                             {field.options?.map((option) => (
@@ -68,7 +71,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
                             <div key={option.value} className="flex items-center space-x-2">
                                 <RadioGroupItem value={option.value} id={`${field.id}-${option.value}`} />
                                 <Label htmlFor={`${field.id}-${option.value}`} className="font-normal cursor-pointer">
-                                    {option.label}
+                                    {t(option.label)}
                                 </Label>
                             </div>
                         ))}
@@ -84,7 +87,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
                             onCheckedChange={(checked) => onChange(checked ? 'true' : 'false')}
                         />
                         <Label htmlFor={field.id} className="font-normal cursor-pointer">
-                            {field.label}
+                            {t(field.label)}
                         </Label>
                     </div>
                 );
@@ -98,7 +101,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
         <div className="space-y-2">
             {field.type !== 'checkbox' && (
                 <Label htmlFor={field.id}>
-                    {field.label}
+                    {t(field.label)}
                     {field.required && <span className="text-red-500 ml-1">*</span>}
                 </Label>
             )}
@@ -108,7 +111,7 @@ export default function FormField({ field, value, onChange, error }: FormFieldPr
             {field.helpText && (
                 <div className="flex items-start gap-2 text-sm text-gray-500">
                     <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>{field.helpText}</span>
+                    <span>{t(field.helpText)}</span>
                 </div>
             )}
 

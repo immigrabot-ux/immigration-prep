@@ -36,87 +36,87 @@ export interface QuizResult {
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
     {
         id: 'current_status',
-        question: 'What is your current immigration status?',
+        question: 'quiz.questions.current_status',
         type: 'single_choice',
         options: [
-            { value: 'us_citizen', label: 'U.S. Citizen' },
-            { value: 'green_card', label: 'Green Card Holder (Permanent Resident)' },
-            { value: 'visa_holder', label: 'Visa Holder (F1, H1B, etc.)' },
-            { value: 'no_status', label: 'No current status / Undocumented' },
-            { value: 'other', label: 'Other' }
+            { value: 'us_citizen', label: 'quiz.options.us_citizen' },
+            { value: 'green_card', label: 'quiz.options.green_card' },
+            { value: 'visa_holder', label: 'quiz.options.visa_holder' },
+            { value: 'no_status', label: 'quiz.options.no_status' },
+            { value: 'other', label: 'quiz.options.other' }
         ]
     },
     {
         id: 'location',
-        question: 'Where are you currently located?',
+        question: 'quiz.questions.location',
         type: 'single_choice',
         options: [
-            { value: 'inside_us', label: 'Inside the United States' },
-            { value: 'outside_us', label: 'Outside the United States' }
+            { value: 'inside_us', label: 'quiz.options.inside_us' },
+            { value: 'outside_us', label: 'quiz.options.outside_us' }
         ]
     },
     {
         id: 'goal',
-        question: 'What are you trying to do?',
+        question: 'quiz.questions.goal',
         type: 'single_choice',
         options: [
-            { value: 'spouse_greencard', label: 'Get a green card for my spouse' },
-            { value: 'my_greencard', label: 'Get a green card for myself' },
-            { value: 'citizenship', label: 'Become a U.S. citizen' },
-            { value: 'work_permit', label: 'Get a work permit' },
-            { value: 'travel_document', label: 'Get a travel document' },
-            { value: 'other', label: 'Something else' }
+            { value: 'spouse_greencard', label: 'quiz.options.spouse_greencard' },
+            { value: 'my_greencard', label: 'quiz.options.my_greencard' },
+            { value: 'citizenship', label: 'quiz.options.citizenship' },
+            { value: 'work_permit', label: 'quiz.options.work_permit' },
+            { value: 'travel_document', label: 'quiz.options.travel_document' },
+            { value: 'other', label: 'quiz.options.something_else' }
         ]
     },
     {
         id: 'relationship',
-        question: 'What is your relationship to the U.S. citizen or green card holder?',
+        question: 'quiz.questions.relationship',
         type: 'single_choice',
         showIf: { goal: ['spouse_greencard', 'my_greencard'] },
         options: [
-            { value: 'spouse', label: 'Spouse (married)' },
-            { value: 'fiance', label: 'Fiancé(e) (engaged, not yet married)' },
-            { value: 'parent', label: 'Parent' },
-            { value: 'child', label: 'Child' },
-            { value: 'sibling', label: 'Sibling' }
+            { value: 'spouse', label: 'quiz.options.spouse' },
+            { value: 'fiance', label: 'quiz.options.fiance' },
+            { value: 'parent', label: 'quiz.options.parent' },
+            { value: 'child', label: 'quiz.options.child' },
+            { value: 'sibling', label: 'quiz.options.sibling' }
         ]
     },
     {
         id: 'marriage_duration',
-        question: 'How long have you been married?',
+        question: 'quiz.questions.marriage_duration',
         type: 'single_choice',
         showIf: { relationship: 'spouse' },
         options: [
-            { value: 'less_than_2_years', label: 'Less than 2 years' },
-            { value: 'more_than_2_years', label: '2 years or more' }
+            { value: 'less_than_2_years', label: 'quiz.options.less_than_2_years' },
+            { value: 'more_than_2_years', label: 'quiz.options.more_than_2_years' }
         ]
     },
     {
         id: 'criminal_history',
-        question: 'Have you ever been arrested, cited, or detained by law enforcement?',
+        question: 'quiz.questions.criminal_history',
         type: 'single_choice',
         options: [
-            { value: 'no', label: 'No' },
-            { value: 'yes', label: 'Yes' }
+            { value: 'no', label: 'quiz.options.no' },
+            { value: 'yes', label: 'quiz.options.yes' }
         ]
     },
     {
         id: 'immigration_violations',
-        question: 'Have you ever overstayed a visa or been out of status?',
+        question: 'quiz.questions.immigration_violations',
         type: 'single_choice',
         options: [
-            { value: 'no', label: 'No' },
-            { value: 'yes', label: 'Yes' },
-            { value: 'not_sure', label: "I'm not sure" }
+            { value: 'no', label: 'quiz.options.no' },
+            { value: 'yes', label: 'quiz.options.yes' },
+            { value: 'not_sure', label: 'quiz.options.not_sure' }
         ]
     },
     {
         id: 'previous_applications',
-        question: 'Have you previously applied for any immigration benefits?',
+        question: 'quiz.questions.previous_applications',
         type: 'single_choice',
         options: [
-            { value: 'no', label: 'No, this is my first time' },
-            { value: 'yes', label: 'Yes, I have applied before' }
+            { value: 'no', label: 'quiz.options.first_time' },
+            { value: 'yes', label: 'quiz.options.applied_before' }
         ]
     }
 ];

@@ -10,6 +10,7 @@ import FormStep from './FormStep';
 import { getFormSteps, getStepSchema } from '@/lib/constants/forms';
 import { createClient } from '@/lib/supabase/client';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslations } from 'next-intl';
 
 interface FormWizardProps {
     applicationId: string;
@@ -33,6 +34,8 @@ export default function FormWizard({
     const [answers, setAnswers] = useState<Record<string, string>>(initialAnswers);
     const [errors, setErrors] = useState<Record<string, string>>({});
     const [isSaving, setIsSaving] = useState(false);
+
+    const t = useTranslations();
 
     const currentStep = steps[currentStepIndex];
     const progress = ((currentStepIndex + 1) / steps.length) * 100;
@@ -161,7 +164,7 @@ export default function FormWizard({
                         </div>
                         <div className="space-y-2">
                             <div className="flex justify-between text-sm text-gray-600">
-                                <span>{currentStep.title}</span>
+                                <span>{t(currentStep.title)}</span>
                                 <span>{Math.round(progress)}%</span>
                             </div>
                             <Progress value={progress} className="h-2" />

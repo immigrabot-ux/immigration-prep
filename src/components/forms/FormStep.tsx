@@ -2,6 +2,7 @@
 
 import { FormStep as FormStepType } from '@/lib/constants/forms';
 import FormField from './FormField';
+import { useTranslations } from 'next-intl';
 
 interface FormStepProps {
     step: FormStepType;
@@ -11,12 +12,14 @@ interface FormStepProps {
 }
 
 export default function FormStep({ step, values, errors, onChange }: FormStepProps) {
+    const t = useTranslations();
+
     return (
         <div className="space-y-6">
             <div>
-                <h2 className="text-2xl font-bold text-gray-900">{step.title}</h2>
+                <h2 className="text-2xl font-bold text-gray-900">{t(step.title)}</h2>
                 {step.description && (
-                    <p className="mt-2 text-gray-600">{step.description}</p>
+                    <p className="mt-2 text-gray-600">{t(step.description)}</p>
                 )}
             </div>
 

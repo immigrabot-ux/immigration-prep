@@ -19,6 +19,7 @@ import {
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslations } from 'next-intl';
 
 interface UniversalFormWizardProps {
   formDefinition: FormDefinition;
@@ -36,6 +37,7 @@ export function UniversalFormWizard({
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, any>>(initialAnswers);
   const { toast } = useToast();
+  const t = useTranslations();
 
   const currentSection = formDefinition.sections[currentSectionIndex];
   const totalSections = formDefinition.sections.length;
@@ -63,7 +65,7 @@ export function UniversalFormWizard({
               type={question.type}
               value={value}
               onChange={(e) => updateAnswer(question.id, e.target.value)}
-              placeholder={question.placeholder}
+              placeholder={question.placeholder ? t(question.placeholder) : ''}
             />
           );
 
@@ -74,7 +76,7 @@ export function UniversalFormWizard({
               type="tel"
               value={value}
               onChange={(e) => updateAnswer(question.id, e.target.value)}
-              placeholder={question.placeholder}
+              placeholder={question.placeholder ? t(question.placeholder) : ''}
             />
           );
 
@@ -92,7 +94,7 @@ export function UniversalFormWizard({
             <Textarea
               value={value}
               onChange={(e) => updateAnswer(question.id, e.target.value)}
-              placeholder={question.placeholder}
+              placeholder={question.placeholder ? t(question.placeholder) : ''}
               rows={4}
             />
           );
@@ -101,12 +103,12 @@ export function UniversalFormWizard({
           return (
             <Select value={value} onValueChange={(val) => updateAnswer(question.id, val)}>
               <SelectTrigger>
-                <SelectValue placeholder={question.placeholder || 'Select...'} />
+                <SelectValue placeholder={question.placeholder ? t(question.placeholder) : t('common.selectOption') || 'Select...'} />
               </SelectTrigger>
               <SelectContent>
                 {question.options?.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
-                    {option.label}
+                    {t(option.label)}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -120,7 +122,7 @@ export function UniversalFormWizard({
                 <div key={option.value} className="flex items-center space-x-2">
                   <RadioGroupItem value={option.value} id={`${question.id}-${option.value}`} />
                   <Label htmlFor={`${question.id}-${option.value}`} className="font-normal cursor-pointer">
-                    {option.label}
+                    {t(option.label)}
                   </Label>
                 </div>
               ))}
@@ -136,7 +138,7 @@ export function UniversalFormWizard({
                 onCheckedChange={(checked) => updateAnswer(question.id, checked)}
               />
               <Label htmlFor={question.id} className="font-normal cursor-pointer">
-                {question.label}
+                {t(question.label)}
               </Label>
             </div>
           );
@@ -154,7 +156,7 @@ export function UniversalFormWizard({
             <Input
               value={value}
               onChange={(e) => updateAnswer(question.id, e.target.value)}
-              placeholder={question.placeholder}
+              placeholder={question.placeholder ? t(question.placeholder) : ''}
             />
           );
       }
@@ -165,7 +167,7 @@ export function UniversalFormWizard({
       return (
         <div key={question.id} className="space-y-2">
           {question.helpText && (
-            <p className="text-sm text-muted-foreground">{question.helpText}</p>
+            <p className="text-sm text-muted-foreground">{t(question.helpText)}</p>
           )}
           {renderField()}
         </div>
@@ -175,11 +177,11 @@ export function UniversalFormWizard({
     return (
       <div key={question.id} className="space-y-2">
         <Label className="text-base font-medium">
-          {question.label}
+          {t(question.label)}
           {question.required && <span className="text-destructive ml-1">*</span>}
         </Label>
         {question.helpText && (
-          <p className="text-sm text-muted-foreground">{question.helpText}</p>
+          <p className="text-sm text-muted-foreground">{t(question.helpText)}</p>
         )}
         {renderField()}
       </div>
@@ -252,9 +254,9 @@ export function UniversalFormWizard({
       {/* Section Card */}
       <Card>
         <CardHeader>
-          <CardTitle>{currentSection.title}</CardTitle>
+          <CardTitle>{t(currentSection.title)}</CardTitle>
           {currentSection.description && (
-            <CardDescription>{currentSection.description}</CardDescription>
+            <CardDescription>{t(currentSection.description)}</CardDescription>
           )}
         </CardHeader>
 
@@ -295,14 +297,13 @@ export function UniversalFormWizard({
           <button
             key={section.id}
             onClick={() => setCurrentSectionIndex(index)}
-            className={`h-2 w-2 rounded-full transition-all ${
-              index === currentSectionIndex
+            className={`h-2 w-2 rounded-full transition-all ${index === currentSectionIndex
                 ? 'bg-primary w-8'
                 : index < currentSectionIndex
-                ? 'bg-primary/50'
-                : 'bg-muted'
-            }`}
-            aria-label={`Go to ${section.title}`}
+                  ? 'bg-primary/50'
+                  : 'bg-muted'
+              }`}
+            aria-label={`Go to ${t(section.title)}`}
           />
         ))}
       </div>

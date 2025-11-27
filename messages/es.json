@@ -25,7 +25,25 @@
     "step2Title": "Responda las Preguntas",
     "step2Description": "Complete nuestro cuestionario en lenguaje claro con guardado automático. Continúe en cualquier momento desde donde lo dejó.",
     "step3Title": "Descargue y Envíe",
-    "step3Description": "Obtenga sus formularios PDF completos y listos para USCIS al instante. Imprima y envíe a USCIS con confianza."
+    "step3Description": "Obtenga sus formularios completos listos para USCIS con instrucciones. Imprima, firme y envíe a USCIS.",
+    "featuresTitle": "Por Qué Elegirnos",
+    "feature1Title": "18 Formularios de USCIS",
+    "feature1Description": "Acceda a todos los formularios principales de USCIS con cuestionarios guiados y asistencia paso a paso.",
+    "feature2Title": "Guardado Automático",
+    "feature2Description": "Sus respuestas se guardan automáticamente mientras escribe. Continúe en cualquier momento desde donde lo dejó.",
+    "feature3Title": "Paquetes de Formularios",
+    "feature3Description": "Ahorre tiempo con paquetes de formularios diseñados para situaciones comunes de inmigración.",
+    "feature4Title": "Seguro y Privado",
+    "feature4Description": "Su información está encriptada y nunca se comparte con terceros.",
+    "ctaTitle": "¿Listo para Comenzar?",
+    "ctaSubtitle": "Únase a miles que han preparado exitosamente sus formularios de inmigración con ImmigrationPrep.",
+    "createAccount": "Crear Cuenta Gratuita",
+    "ctaBenefits": "✓ No se requiere tarjeta de crédito  ✓ Comience gratis  ✓ Acceso 24/7",
+    "footerDisclaimerTitle": "Aviso Legal:",
+    "footerDisclaimerText": "ImmigrationPrep es una herramienta de software de autoayuda. NO somos un bufete de abogados y NO proporcionamos asesoramiento legal. Al usar este servicio, usted acepta que está preparando sus propios formularios de inmigración. Para asesoramiento legal específico para su situación, consulte con un abogado de inmigración licenciado.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "copyright": "© 2025 ImmigrationPrep. Todos los derechos reservados."
   },
   "auth": {
     "signIn": "Iniciar Sesión",
@@ -126,5 +144,136 @@
     "loading": "Cargando...",
     "error": "Error",
     "success": "Éxito"
+  },
+  "quiz": {
+    "questions": {
+      "current_status": "¿Cuál es su estatus migratorio actual?",
+      "location": "¿Dónde se encuentra actualmente?",
+      "goal": "¿Qué está tratando de hacer?",
+      "relationship": "¿Cuál es su relación con el ciudadano estadounidense o residente permanente?",
+      "marriage_duration": "¿Cuánto tiempo ha estado casado?",
+      "criminal_history": "¿Alguna vez ha sido arrestado, citado o detenido por la policía?",
+      "immigration_violations": "¿Alguna vez se ha quedado más tiempo del permitido por su visa o ha estado fuera de estatus?",
+      "previous_applications": "¿Ha solicitado anteriormente algún beneficio de inmigración?"
+    },
+    "options": {
+      "us_citizen": "Ciudadano de EE.UU.",
+      "green_card": "Residente Permanente (Green Card)",
+      "visa_holder": "Titular de Visa (F1, H1B, etc.)",
+      "no_status": "Sin estatus actual / Indocumentado",
+      "other": "Otro",
+      "inside_us": "Dentro de los Estados Unidos",
+      "outside_us": "Fuera de los Estados Unidos",
+      "spouse_greencard": "Obtener una Green Card para mi cónyuge",
+      "my_greencard": "Obtener una Green Card para mí",
+      "citizenship": "Convertirme en ciudadano de EE.UU.",
+      "work_permit": "Obtener un permiso de trabajo",
+      "travel_document": "Obtener un documento de viaje",
+      "spouse": "Cónyuge (casado)",
+      "fiance": "Prometido/a (comprometido, aún no casado)",
+      "parent": "Padre/Madre",
+      "child": "Hijo/a",
+      "sibling": "Hermano/a",
+      "less_than_2_years": "Menos de 2 años",
+      "more_than_2_years": "2 años o más",
+      "no": "No",
+      "yes": "Sí",
+      "not_sure": "No estoy seguro",
+      "first_time": "No, esta es mi primera vez",
+      "applied_before": "Sí, he solicitado antes",
+      "something_else": "Algo más"
+    }
+  },
+  "formSteps": {
+    "i130": {
+      "petitioner_basic": {
+        "title": "Su Información Básica",
+        "description": "Cuéntenos sobre usted (el peticionario ciudadano de EE.UU.)"
+      },
+      "petitioner_address": {
+        "title": "Su Dirección Actual",
+        "description": "¿Dónde vive actualmente?"
+      },
+      "beneficiary_basic": {
+        "title": "Información de su Cónyuge",
+        "description": "Cuéntenos sobre su cónyuge (el beneficiario)"
+      },
+      "marriage_info": {
+        "title": "Información del Matrimonio",
+        "description": "Cuéntenos sobre su matrimonio"
+      }
+    }
+  },
+  "formFields": {
+    "petitioner": {
+      "lastName": {
+        "label": "Apellido Legal (Last Name)",
+        "help": "Ingrese su nombre exactamente como aparece en su certificado de nacimiento o naturalización"
+      },
+      "firstName": {
+        "label": "Primer Nombre Legal (First Name)"
+      },
+      "middleName": {
+        "label": "Segundo Nombre (Middle Name)",
+        "help": "Deje en blanco si no tiene segundo nombre"
+      },
+      "dateOfBirth": {
+        "label": "Fecha de Nacimiento (Date of Birth)"
+      },
+      "email": {
+        "label": "Correo Electrónico (Email Address)"
+      },
+      "address": {
+        "street": {
+          "label": "Dirección (Street Address)"
+        },
+        "apt": {
+          "label": "Apartamento/Unidad (Apt/Unit)"
+        },
+        "city": {
+          "label": "Ciudad (City)"
+        },
+        "state": {
+          "label": "Estado (State)"
+        },
+        "zipCode": {
+          "label": "Código Postal (ZIP Code)"
+        }
+      }
+    },
+    "beneficiary": {
+      "lastName": {
+        "label": "Apellido Legal (Last Name)"
+      },
+      "firstName": {
+        "label": "Primer Nombre Legal (First Name)"
+      },
+      "middleName": {
+        "label": "Segundo Nombre (Middle Name)"
+      },
+      "dateOfBirth": {
+        "label": "Fecha de Nacimiento (Date of Birth)"
+      },
+      "countryOfBirth": {
+        "label": "País de Nacimiento (Country of Birth)"
+      }
+    },
+    "marriage": {
+      "dateOfMarriage": {
+        "label": "Fecha de Matrimonio (Date of Marriage)"
+      },
+      "placeOfMarriage": {
+        "label": "Ciudad y País Donde Se Casaron"
+      },
+      "previousMarriages": {
+        "label": "¿Usted o su cónyuge han estado casados antes?",
+        "options": {
+          "no": "No, este es el primer matrimonio para ambos",
+          "petitioner": "Sí, yo (peticionario) estuve casado antes",
+          "beneficiary": "Sí, mi cónyuge (beneficiario) estuvo casado antes",
+          "both": "Sí, ambos estuvimos casados antes"
+        }
+      }
+    }
   }
 }

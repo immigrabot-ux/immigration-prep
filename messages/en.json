@@ -25,7 +25,25 @@
     "step2Title": "Answer Questions",
     "step2Description": "Fill out our plain-English questionnaire with auto-save. Resume anytime from where you left off.",
     "step3Title": "Download & File",
-    "step3Description": "Get your completed, USCIS-ready PDF forms instantly. Print and mail to USCIS with confidence."
+    "step3Description": "Get your completed, USCIS-ready forms with instructions. Print, sign, and mail to USCIS.",
+    "featuresTitle": "Why Choose Us",
+    "feature1Title": "18 USCIS Forms",
+    "feature1Description": "Access all major USCIS forms with guided questionnaires and step-by-step assistance.",
+    "feature2Title": "Auto-Save Progress",
+    "feature2Description": "Your answers are automatically saved as you type. Resume anytime from where you left off.",
+    "feature3Title": "Package Deals",
+    "feature3Description": "Save time with bundled form packages designed for common immigration situations.",
+    "feature4Title": "Secure & Private",
+    "feature4Description": "Your information is encrypted and never shared with third parties.",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Join thousands who have successfully prepared their immigration forms with ImmigrationPrep.",
+    "createAccount": "Create Free Account",
+    "ctaBenefits": "✓ No credit card required  ✓ Start for free  ✓ 24/7 access",
+    "footerDisclaimerTitle": "Disclaimer:",
+    "footerDisclaimerText": "ImmigrationPrep is a self-help software tool. We are NOT a law firm and do NOT provide legal advice. By using this service, you agree that you are preparing your own immigration forms. For legal advice specific to your situation, consult with a licensed immigration attorney.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "© 2025 ImmigrationPrep. All rights reserved."
   },
   "auth": {
     "signIn": "Sign In",
@@ -126,5 +144,136 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success"
+  },
+  "quiz": {
+    "questions": {
+      "current_status": "What is your current immigration status?",
+      "location": "Where are you currently located?",
+      "goal": "What are you trying to do?",
+      "relationship": "What is your relationship to the U.S. citizen or green card holder?",
+      "marriage_duration": "How long have you been married?",
+      "criminal_history": "Have you ever been arrested, cited, or detained by law enforcement?",
+      "immigration_violations": "Have you ever overstayed a visa or been out of status?",
+      "previous_applications": "Have you previously applied for any immigration benefits?"
+    },
+    "options": {
+      "us_citizen": "U.S. Citizen",
+      "green_card": "Green Card Holder (Permanent Resident)",
+      "visa_holder": "Visa Holder (F1, H1B, etc.)",
+      "no_status": "No current status / Undocumented",
+      "other": "Other",
+      "inside_us": "Inside the United States",
+      "outside_us": "Outside the United States",
+      "spouse_greencard": "Get a green card for my spouse",
+      "my_greencard": "Get a green card for myself",
+      "citizenship": "Become a U.S. citizen",
+      "work_permit": "Get a work permit",
+      "travel_document": "Get a travel document",
+      "spouse": "Spouse (married)",
+      "fiance": "Fiancé(e) (engaged, not yet married)",
+      "parent": "Parent",
+      "child": "Child",
+      "sibling": "Sibling",
+      "less_than_2_years": "Less than 2 years",
+      "more_than_2_years": "2 years or more",
+      "no": "No",
+      "yes": "Yes",
+      "not_sure": "I'm not sure",
+      "first_time": "No, this is my first time",
+      "applied_before": "Yes, I have applied before",
+      "something_else": "Something else"
+    }
+  },
+  "formSteps": {
+    "i130": {
+      "petitioner_basic": {
+        "title": "Your Basic Information",
+        "description": "Tell us about yourself (the U.S. citizen petitioner)"
+      },
+      "petitioner_address": {
+        "title": "Your Current Address",
+        "description": "Where do you currently live?"
+      },
+      "beneficiary_basic": {
+        "title": "Your Spouse's Information",
+        "description": "Tell us about your spouse (the beneficiary)"
+      },
+      "marriage_info": {
+        "title": "Marriage Information",
+        "description": "Tell us about your marriage"
+      }
+    }
+  },
+  "formFields": {
+    "petitioner": {
+      "lastName": {
+        "label": "Legal Last Name",
+        "help": "Enter your name exactly as it appears on your birth certificate or naturalization certificate"
+      },
+      "firstName": {
+        "label": "Legal First Name"
+      },
+      "middleName": {
+        "label": "Middle Name",
+        "help": "Leave blank if you don't have a middle name"
+      },
+      "dateOfBirth": {
+        "label": "Date of Birth"
+      },
+      "email": {
+        "label": "Email Address"
+      },
+      "address": {
+        "street": {
+          "label": "Street Address"
+        },
+        "apt": {
+          "label": "Apartment/Unit Number"
+        },
+        "city": {
+          "label": "City"
+        },
+        "state": {
+          "label": "State"
+        },
+        "zipCode": {
+          "label": "ZIP Code"
+        }
+      }
+    },
+    "beneficiary": {
+      "lastName": {
+        "label": "Legal Last Name"
+      },
+      "firstName": {
+        "label": "Legal First Name"
+      },
+      "middleName": {
+        "label": "Middle Name"
+      },
+      "dateOfBirth": {
+        "label": "Date of Birth"
+      },
+      "countryOfBirth": {
+        "label": "Country of Birth"
+      }
+    },
+    "marriage": {
+      "dateOfMarriage": {
+        "label": "Date of Marriage"
+      },
+      "placeOfMarriage": {
+        "label": "City and Country Where You Were Married"
+      },
+      "previousMarriages": {
+        "label": "Have you or your spouse been married before?",
+        "options": {
+          "no": "No, this is the first marriage for both of us",
+          "petitioner": "Yes, I (petitioner) was married before",
+          "beneficiary": "Yes, my spouse (beneficiary) was married before",
+          "both": "Yes, we were both married before"
+        }
+      }
+    }
   }
 }
