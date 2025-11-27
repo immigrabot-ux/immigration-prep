@@ -9,15 +9,15 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="border-b">
+      <nav className="border-b bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <Link href="/" className="font-bold text-xl">
+          <div className="flex justify-between h-20 items-center">
+            <Link href="/" className="font-bold text-2xl text-blue-600">
               ImmigrationPrep
             </Link>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6">
               <Link href="/browse">
-                <Button variant="ghost">Browse Forms</Button>
+                <Button variant="ghost" className="text-base font-medium">Browse Forms</Button>
               </Link>
               <AuthButton />
             </div>
@@ -26,26 +26,43 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900">
-            Prepare Your Immigration Forms
-            <span className="block text-blue-600">Without Expensive Lawyers</span>
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
+        <div className="max-w-4xl mx-auto text-center relative">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
+            <Shield className="w-4 h-4" />
+            <span>Trusted by 10,000+ Applicants</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 leading-tight">
+            Immigration Forms
+            <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Made Simple</span>
           </h1>
-          <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-            Self-service platform to prepare USCIS forms. Access all 18 forms with guided assistance. Save thousands on legal fees.
+          <p className="mt-8 text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Prepare USCIS forms yourself with guided assistance. No lawyer needed. Save thousands.
           </p>
-          <p className="mt-6 text-sm text-gray-500">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/browse">
+              <Button size="lg" className="text-lg px-10 py-7 bg-blue-600 hover:bg-blue-700 shadow-lg">
+                Get Started Free
+              </Button>
+            </Link>
+            <Link href="/browse">
+              <Button size="lg" variant="outline" className="text-lg px-10 py-7 border-2">
+                Browse All Forms
+              </Button>
+            </Link>
+          </div>
+          <p className="mt-8 text-sm text-gray-500 bg-yellow-50 border border-yellow-200 rounded-lg px-4 py-3 inline-block">
             ⚠️ We are not a law firm. You prepare your own forms using our software.
           </p>
         </div>
       </section>
 
       {/* Situation Selector */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">What's Your Situation?</h2>
-          <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">What's Your Situation?</h2>
+          <p className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
             Select the option that best describes your situation to get started with the right forms.
           </p>
           <SituationSelector />
@@ -53,40 +70,43 @@ export default function HomePage() {
       </section>
 
       {/* How it Works */}
-      <section className="py-20 bg-white px-4">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">How It Works</h2>
+          <p className="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
+            Three simple steps to prepare your immigration forms
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-blue-600">1</span>
+            <Card className="border-2 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                  <span className="text-3xl font-bold text-white">1</span>
                 </div>
-                <CardTitle>Choose Your Forms</CardTitle>
-                <CardDescription>
-                  Select from 18 USCIS forms or convenient packages tailored to your situation.
+                <CardTitle className="text-xl mb-3">Choose Your Forms</CardTitle>
+                <CardDescription className="text-base leading-relaxed">
+                  Select from 18 USCIS forms or convenient packages tailored to your specific immigration situation.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-blue-600">2</span>
+            <Card className="border-2 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                  <span className="text-3xl font-bold text-white">2</span>
                 </div>
-                <CardTitle>Fill Out Questions</CardTitle>
-                <CardDescription>
-                  Answer our plain-English questionnaire with auto-save. Resume anytime.
+                <CardTitle className="text-xl mb-3">Answer Questions</CardTitle>
+                <CardDescription className="text-base leading-relaxed">
+                  Fill out our plain-English questionnaire with auto-save. Resume anytime from where you left off.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-blue-600">3</span>
+            <Card className="border-2 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                  <span className="text-3xl font-bold text-white">3</span>
                 </div>
-                <CardTitle>Download & File</CardTitle>
-                <CardDescription>
-                  Get your completed forms, checklists, and instructions. Print, sign, and mail.
+                <CardTitle className="text-xl mb-3">Download & File</CardTitle>
+                <CardDescription className="text-base leading-relaxed">
+                  Get your completed, USCIS-ready forms with instructions. Print, sign, and mail to USCIS.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -140,19 +160,30 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-blue-600 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+      <section className="relative py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/5 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.2))]"></div>
+        <div className="max-w-4xl mx-auto text-center relative">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Access all 18 USCIS forms with guided assistance and auto-save.
+          <p className="text-xl md:text-2xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+            Join thousands who have successfully prepared their immigration forms with ImmigrationPrep.
           </p>
-          <Link href="/browse">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Browse All Forms
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/browse">
+              <Button size="lg" variant="secondary" className="text-lg px-10 py-7 bg-white text-blue-600 hover:bg-gray-100 shadow-xl font-semibold">
+                Browse All Forms
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button size="lg" variant="outline" className="text-lg px-10 py-7 border-2 border-white text-white hover:bg-white/10">
+                Create Free Account
+              </Button>
+            </Link>
+          </div>
+          <p className="mt-10 text-blue-200 text-sm">
+            ✓ No credit card required  ✓ Start for free  ✓ 24/7 access
+          </p>
         </div>
       </section>
 

@@ -15,12 +15,14 @@ interface BrowseClientProps {
   highlightPackage?: string;
   highlightCategory?: string;
   highlightForm?: string;
+  isAuthenticated?: boolean;
 }
 
 export function BrowseClient({
   highlightPackage,
   highlightCategory,
   highlightForm,
+  isAuthenticated = false,
 }: BrowseClientProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const highlightRef = useRef<HTMLDivElement>(null);
@@ -194,12 +196,20 @@ export function BrowseClient({
                     </div>
 
                     <div className="space-y-2">
-                      <Button asChild className="w-full" size="lg">
-                        <Link href="/signup">Sign Up to Start</Link>
-                      </Button>
-                      <Button asChild variant="outline" className="w-full" size="sm">
-                        <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
-                      </Button>
+                      {isAuthenticated ? (
+                        <Button asChild className="w-full" size="lg">
+                          <Link href="/dashboard">Go to Dashboard</Link>
+                        </Button>
+                      ) : (
+                        <>
+                          <Button asChild className="w-full" size="lg">
+                            <Link href="/signup">Sign Up to Start</Link>
+                          </Button>
+                          <Button asChild variant="outline" className="w-full" size="sm">
+                            <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
+                          </Button>
+                        </>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
@@ -250,12 +260,20 @@ export function BrowseClient({
                     </CardContent>
 
                     <CardContent className="pt-0 space-y-2">
-                      <Button asChild className="w-full">
-                        <Link href="/signup">Sign Up to Start</Link>
-                      </Button>
-                      <Button asChild variant="outline" className="w-full" size="sm">
-                        <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
-                      </Button>
+                      {isAuthenticated ? (
+                        <Button asChild className="w-full">
+                          <Link href="/dashboard">Go to Dashboard</Link>
+                        </Button>
+                      ) : (
+                        <>
+                          <Button asChild className="w-full">
+                            <Link href="/signup">Sign Up to Start</Link>
+                          </Button>
+                          <Button asChild variant="outline" className="w-full" size="sm">
+                            <Link href={`/preview/${pkg.formIds[0].toLowerCase()}`}>Try Preview</Link>
+                          </Button>
+                        </>
+                      )}
                     </CardContent>
                   </Card>
                 </div>
@@ -345,12 +363,20 @@ export function BrowseClient({
                   </CardContent>
 
                   <CardContent className="pt-0 space-y-2">
-                    <Button asChild variant="default" className="w-full">
-                      <Link href="/signup">Sign Up to Start</Link>
-                    </Button>
-                    <Button asChild variant="outline" className="w-full" size="sm">
-                      <Link href={`/preview/${form.id}`}>Try Preview</Link>
-                    </Button>
+                    {isAuthenticated ? (
+                      <Button asChild variant="default" className="w-full">
+                        <Link href="/dashboard">Go to Dashboard</Link>
+                      </Button>
+                    ) : (
+                      <>
+                        <Button asChild variant="default" className="w-full">
+                          <Link href="/signup">Sign Up to Start</Link>
+                        </Button>
+                        <Button asChild variant="outline" className="w-full" size="sm">
+                          <Link href={`/preview/${form.id}`}>Try Preview</Link>
+                        </Button>
+                      </>
+                    )}
                   </CardContent>
                 </Card>
               </div>
