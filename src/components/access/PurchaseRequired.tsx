@@ -17,7 +17,7 @@ export function PurchaseRequired({ formId, reason }: PurchaseRequiredProps) {
 
   // Find packages that include this form
   const availablePackages = FORM_PACKAGES.filter((pkg) =>
-    pkg.forms.some((f) => f.toLowerCase() === formId.toLowerCase())
+    pkg.formIds.some((f) => f.toLowerCase() === formId.toLowerCase())
   );
 
   const getMessage = () => {
@@ -101,8 +101,8 @@ export function PurchaseRequired({ formId, reason }: PurchaseRequiredProps) {
                               {pkg.description}
                             </p>
                             <p className="text-sm text-muted-foreground mt-2">
-                              Includes {pkg.forms.length} forms:{' '}
-                              {pkg.forms.map((f) => f.toUpperCase()).join(', ')}
+                              Includes {pkg.formIds.length} forms:{' '}
+                              {pkg.formIds.map((f) => f.toUpperCase()).join(', ')}
                             </p>
                           </div>
                           <div className="text-right">
