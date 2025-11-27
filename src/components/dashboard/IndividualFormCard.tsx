@@ -1,58 +1,23 @@
 'use client';
 
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { FileText, Loader2, Clock, DollarSign } from 'lucide-react';
+import { FileText, Clock, DollarSign } from 'lucide-react';
 import { FormDefinition } from '@/lib/constants/forms-registry';
-import { useToast } from '@/hooks/use-toast';
 
 interface IndividualFormCardProps {
   form: FormDefinition;
 }
 
 export function IndividualFormCard({ form }: IndividualFormCardProps) {
-  const [isStarting, setIsStarting] = useState(false);
   const router = useRouter();
-  const { toast } = useToast();
 
-  const handleStartForm = async () => {
-    setIsStarting(true);
-
-    try {
-      const response = await fetch('/api/forms', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ formIds: [form.id] }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to create form application');
-      }
-
-      const data = await response.json();
-
-      toast({
-        title: 'Form Started',
-        description: `Your ${form.id} application has been created.`,
-      });
-
-      // Redirect to the form
-      router.push(`/dashboard/forms/${form.id}`);
-    } catch (error) {
-      console.error('Error starting form:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to start form. Please try again.',
-        variant: 'destructive',
-      });
-    } finally {
-      setIsStarting(false);
-    }
+  const handleStartForm = () => {
+    // Navigate directly to the form page
+    // Access control will be handled by the form page itself
+    router.push(`/dashboard/forms/${form.id}`);
   };
 
   const getCategoryColor = (category: string) => {
@@ -139,18 +104,10 @@ export function IndividualFormCard({ form }: IndividualFormCardProps) {
       <CardFooter className="pt-3">
         <Button
           onClick={handleStartForm}
-          disabled={isStarting}
           variant="outline"
           className="w-full"
         >
-          {isStarting ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Starting...
-            </>
-          ) : (
-            'Start Form'
-          )}
+          Start Form
         </Button>
       </CardFooter>
     </Card>
