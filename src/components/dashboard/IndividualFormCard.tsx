@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { FileText, Loader2, Clock, DollarSign } from 'lucide-react';
-import { FormDefinition } from '@/lib/forms/types';
+import { FormDefinition } from '@/lib/constants/forms-registry';
 import { useToast } from '@/hooks/use-toast';
 
 interface IndividualFormCardProps {

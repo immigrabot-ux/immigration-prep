@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { ChevronLeft, ChevronRight, Check } from 'lucide-react';
-import { FormDefinition, Question } from '@/lib/forms/types';
+import { FormDefinition, Question } from '@/lib/constants/forms-registry';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
