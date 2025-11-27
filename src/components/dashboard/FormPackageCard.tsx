@@ -21,9 +21,11 @@ export function FormPackageCard({ package: pkg }: FormPackageCardProps) {
   const { toast } = useToast();
 
   const handlePurchase = async () => {
+    console.log('🛒 Buy Now clicked for package:', pkg.id);
     setIsPurchasing(true);
 
     try {
+      console.log('📤 Sending checkout request...');
       const response = await fetch('/api/payments/create-checkout', {
         method: 'POST',
         headers: {
@@ -32,21 +34,30 @@ export function FormPackageCard({ package: pkg }: FormPackageCardProps) {
         body: JSON.stringify({ packageId: pkg.id }),
       });
 
+      console.log('📥 Response status:', response.status);
+
       if (!response.ok) {
-        throw new Error('Failed to create checkout session');
+        const errorData = await response.json().catch(() => ({}));
+        console.error('❌ Checkout failed:', errorData);
+        throw new Error(errorData.details || errorData.error || 'Failed to create checkout session');
       }
 
       const data = await response.json();
+      console.log('✅ Checkout data:', data);
 
       // Redirect to Stripe Checkout
       if (data.url) {
+        console.log('🔗 Redirecting to Stripe:', data.url);
         window.location.href = data.url;
+      } else {
+        console.error('❌ No checkout URL in response');
+        throw new Error('No checkout URL received');
       }
     } catch (error) {
-      console.error('Error creating checkout:', error);
+      console.error('💥 Error creating checkout:', error);
       toast({
         title: 'Error',
-        description: 'Failed to start checkout. Please try again.',
+        description: error instanceof Error ? error.message : 'Failed to start checkout. Please try again.',
         variant: 'destructive',
       });
       setIsPurchasing(false);
