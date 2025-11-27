@@ -7804,7 +7804,6 @@ const I821D_DEFINITION: FormDefinition = {
             ],
         },
     ],
-    estimatedTime: '3-6 months',
     tips: [
         'DACA does not provide lawful status but provides protection from deportation',
         'You must file Form I-765 (work permit) along with Form I-821D',
