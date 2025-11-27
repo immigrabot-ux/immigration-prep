@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
-import { stripe } from '@/lib/stripe';
+import { getStripe } from '@/lib/stripe';
 import { FORM_PACKAGES } from '@/lib/constants/form-packages';
 
 export async function POST(request: NextRequest) {
@@ -50,6 +50,18 @@ export async function POST(request: NextRequest) {
     }
 
     console.log('🔗 App URL:', appUrl);
+
+    // Initialize Stripe
+    let stripe;
+    try {
+      stripe = getStripe();
+    } catch (stripeError) {
+      console.error('❌ Failed to initialize Stripe:', stripeError);
+      return NextResponse.json(
+        { error: 'Payment system configuration error', details: stripeError instanceof Error ? stripeError.message : 'Unknown error' },
+        { status: 500 }
+      );
+    }
 
     // Create Stripe checkout session
     console.log('💳 Creating Stripe session...');
