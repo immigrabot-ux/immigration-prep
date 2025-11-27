@@ -7804,13 +7804,9 @@ const I821D_DEFINITION: FormDefinition = {
             ],
         },
     ],
-    tips: [
-        'DACA does not provide lawful status but provides protection from deportation',
-        'You must file Form I-765 (work permit) along with Form I-821D',
-        'Initial requests must include proof of arrival before age 16',
-        'Must have continuously resided in the US since June 15, 2007',
-        'Keep copies of all documents submitted',
-    ],
+    pdfFieldMappings: [],
+    requiredDocuments: [],
+    instructions: [],
 };
 
 const I212_DEFINITION: FormDefinition = {
